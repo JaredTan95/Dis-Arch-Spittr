@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr.iml" filepath="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album.iml" filepath="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album-api/dubbox-Spittr-Album-api.iml" filepath="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album-api/dubbox-Spittr-Album-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album-core/dubbox-Spittr-Album-core.iml" filepath="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album-core/dubbox-Spittr-Album-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album-provider/dubbox-Spittr-Album-provider.iml" filepath="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album-provider/dubbox-Spittr-Album-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-MusicGenres/dubbox-Spittr-MusicGenres.iml" filepath="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-MusicGenres/dubbox-Spittr-MusicGenres.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Singer/dubbox-Spittr-Singer.iml" filepath="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Singer/dubbox-Spittr-Singer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic.iml" filepath="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-User/dubbox-Spittr-User.iml" filepath="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-User/dubbox-Spittr-User.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/dubbox-Spittr-Web.iml" filepath="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/dubbox-Spittr-Web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-common/dubbox-Spittr-common.iml" filepath="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-common/dubbox-Spittr-common.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dubbox-Spittr-Web:war">
+    <output-path>$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/target</output-path>
+    <root id="archive" name="dubbox-Spittr-Web.war">
+      <element id="artifact" artifact-name="dubbox-Spittr-Web:war exploded" />
+    </root>
+  </artifact>
+</component>
