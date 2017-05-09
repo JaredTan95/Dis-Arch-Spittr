@@ -1,14 +1,15 @@
 package cn.tanjianff.Spittr.album.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by tanjian on 2017/5/3.
  * 专辑实体类
  */
-public class Album {
+public class Album implements Serializable {
     private String id;
-    private String ingerid;
+    private String singerid;
     private String title;
     private Date pubTime;
     private String descp;
@@ -18,10 +19,10 @@ public class Album {
     public Album() {
     }
 
-    public Album(String id, String ingerid, String title, Date pubTime,
+    public Album(String id, String singerid, String title, Date pubTime,
                  String descp, int visRec, String coverUrl) {
         this.id = id;
-        this.ingerid = ingerid;
+        this.singerid = singerid;
         this.title = title;
         this.pubTime = pubTime;
         this.descp = descp;
@@ -37,12 +38,12 @@ public class Album {
         this.id = id;
     }
 
-    public String getIngerid() {
-        return ingerid;
+    public String getSingerid() {
+        return singerid;
     }
 
-    public void setIngerid(String ingerid) {
-        this.ingerid = ingerid;
+    public void setSingerid(String singerid) {
+        this.singerid = singerid;
     }
 
     public String getTitle() {

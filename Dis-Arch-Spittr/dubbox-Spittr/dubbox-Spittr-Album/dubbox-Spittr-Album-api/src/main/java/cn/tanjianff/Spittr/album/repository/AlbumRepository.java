@@ -15,9 +15,8 @@ public interface AlbumRepository {
 
     Album findById(String id);
 
-    List<Album> findSingerById(String id);
+    List<Album> findBySingerId(String id);
 
-    /*ASC 、DESC*/
     List<Album> orderByPubTime();
 
     List<Album> findAll();

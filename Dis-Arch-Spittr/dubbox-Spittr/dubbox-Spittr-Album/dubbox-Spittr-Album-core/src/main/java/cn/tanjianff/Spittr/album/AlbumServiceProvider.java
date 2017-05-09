@@ -12,11 +12,32 @@ import java.util.List;
 public class AlbumServiceProvider implements AlbumService {
     private AlbumRepository albumRepository;
 
+   /* @Autowired*/
     public AlbumServiceProvider(AlbumRepository albumRepository) {
         this.albumRepository = albumRepository;
     }
 
     public List<Album> getAlbums() {
       return albumRepository.findAll();
+    }
+
+    @Override
+    public Album save(Album album) {
+        return albumRepository.save(album)?album:new Album();
+    }
+
+    @Override
+    public Album getById(String id) {
+        return albumRepository.findById(id);
+    }
+
+    @Override
+    public  List<Album> getBySingerID(String singerId) {
+        return albumRepository.findBySingerId(singerId);
+    }
+
+    @Override
+    public  List<Album> getByTitle(String title) {
+        return albumRepository.findByTitle(title);
     }
 }

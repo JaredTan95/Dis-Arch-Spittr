@@ -1,17 +1,10 @@
 package cn.tanjianff.contorller;
 
-import cn.tanjianff.Spittr.album.AlbumServiceProvider;
-import cn.tanjianff.Spittr.album.domain.Album;
-import cn.tanjianff.Spittr.album.repository.JdbcTemplate.JdbcAlbumsRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import cn.tanjianff.Spittr.album.AlbumService;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-
-import java.util.List;
-
-import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 /**
  * Created by tanjian on 16/9/14.
@@ -21,20 +14,31 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 @Controller
 @RequestMapping(value = "")
 public class HomeController {
+    private ClassPathXmlApplicationContext context;
 
-    /*自动注入基于JdbcTemplate实现AlbumsRepository接口的实例Bean,
-    * 将其传递给专辑服务提供者*/
-    @Autowired
-    private JdbcAlbumsRepository jdbcAlbumsRepository;
-
-    @RequestMapping(value = "/")
-    public String index(){
-        return "index";
+    public HomeController() {
+        try {
+            this.context = new ClassPathXmlApplicationContext(new String[]{"dubbo-Spittr-consumer-web.xml"});
+        }catch (Exception e){
+            System.err.println("xml加载失败!"+e);
+        }
     }
 
-    @RequestMapping(value = "/get",method =GET)
+    private void startContext(){
+        this.context.start();
+    }
+
+    private AlbumService albumService;
+
+      @RequestMapping(value = "/")
+        public String index(){
+            return "index";
+        }
+   /* @RequestMapping(value = "/")
     @ResponseBody
-    public List<Album> get(){
-        return new AlbumServiceProvider(jdbcAlbumsRepository).getAlbums();
-    }
+    public List<Album> index() {
+        startContext();
+        AlbumService albumService = (AlbumService) context.getBean("albumService"); // 获取远程服务代理
+        return albumService.getAlbums();
+    }*/
 }
