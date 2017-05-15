@@ -15,4 +15,6 @@ public interface AlbumService {
     Album getById(String id);
     List<Album> getBySingerID(String id);
     List<Album> getByTitle(String id);
+
+    int getMax();
 }

@@ -12,7 +12,8 @@
         <module name="dubbox-Spittr-MusicGenres" />
         <module name="dubbox-Spittr-Singer-api" />
         <module name="dubbox-Spittr-singer-core" />
-        <module name="dubbox-Spittr-SingleMusic" />
+        <module name="dubbox-Spittr-SingleMusic-api" />
+        <module name="dubbox-Spittr-SingleMusic-core" />
         <module name="dubbox-Spittr-User" />
         <module name="dubbox-Spittr-Web" />
       </profile>
@@ -33,6 +34,8 @@
       <module name="dubbox-Spittr-Singer-api" target="1.8" />
       <module name="dubbox-Spittr-singer-core" target="1.8" />
       <module name="dubbox-Spittr-SingleMusic" target="1.8" />
+      <module name="dubbox-Spittr-SingleMusic-api" target="1.8" />
+      <module name="dubbox-Spittr-SingleMusic-core" target="1.8" />
       <module name="dubbox-Spittr-User" target="1.8" />
       <module name="dubbox-Spittr-Web" target="1.8" />
     </bytecodeTargetLevel>

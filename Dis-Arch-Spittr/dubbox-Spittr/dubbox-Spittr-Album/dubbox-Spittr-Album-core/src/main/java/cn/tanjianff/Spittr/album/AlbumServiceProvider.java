@@ -40,4 +40,9 @@ public class AlbumServiceProvider implements AlbumService {
     public  List<Album> getByTitle(String title) {
         return albumRepository.findByTitle(title);
     }
+
+    @Override
+    public int getMax() {
+        return albumRepository.count();
+    }
 }
