@@ -20,12 +20,9 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
 	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-    <dubbo:application name="Spittr-Album-Service-provider" owner="programmer" organization="cn.tanjianff"/>
+    <dubbo:application name="Spittr-Singer-Service-provider" owner="programmer" organization="cn.tanjianff"/>
 
-    <dubbo:registry address="zookeeper://123.207.83.185:2181?backup=123.207.109.129:2182,115.159.216.56:2183"/>
-
-    <!--uncomment this if you want to test dubbo's monitor-->
-    <!--<dubbo:monitor protocol="registry"/>-->
+    <dubbo:registry address="zookeeper://123.207.83.185:2181?backup=139.199.89.106:2181,115.159.216.56:2181"/>
 
     <!-- here we demonstrate both annotation-based and xml-based configs -->
     <dubbo:annotation package="cn.tanjianff.Spittr.singer" />
@@ -37,7 +34,7 @@
     <!--<dubbo:protocol name="dubbo" serialization="nativejava"/>-->
     <!--<dubbo:protocol name="dubbo" serialization="hessian2"/>-->
     <!--<dubbo:protocol name="dubbo" serialization="fastjson"/>-->
-    <!--<dubbo:protocol name="dubbo" serialization="dubbo"/>-->
+    <dubbo:protocol name="dubbo" serialization="dubbo"/>
 
 
     <!--TODO according to the spring convention, we should use something like keep-alive-->
@@ -63,7 +60,7 @@
   <!--  <dubbo:protocol name="hessian" port="8890"/>
     <dubbo:protocol name="webservice" port="8892"/>-->
 
-    <dubbo:service interface="cn.tanjianff.Spittr.singer.SingerService" ref="singerService" protocol="dubbo"/>
+    <dubbo:service interface="cn.tanjianff.Spittr.singer.SingerService" ref="singerServiceProvider" protocol="dubbo"/>
 
 <!--
 	<dubbo:service interface="com.alibaba.dubbo.demo.bid.BidService" ref="bidService"  protocol="dubbo"/>
