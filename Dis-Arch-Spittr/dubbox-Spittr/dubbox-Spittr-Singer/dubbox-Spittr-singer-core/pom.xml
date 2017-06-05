@@ -52,11 +52,11 @@
                                 </transformer>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
-                                    <resource>META-INF/spring.handlers</resource>
+                                    <resource>META-INF/META-INF.handlers</resource>
                                 </transformer>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
-                                    <resource>META-INF/spring.schemas</resource>
+                                    <resource>META-INF/META-INF.schemas</resource>
                                 </transformer>
                             </transformers>
                         </configuration>

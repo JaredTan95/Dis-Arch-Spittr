@@ -10,6 +10,12 @@ import java.util.List;
  */
 public class MusicGenresProvider implements MusicGenresService {
     private MusicGenresRepository musicGenresRepository;
+
+    //TODO:专辑服务未完善
+    public MusicGenresProvider(MusicGenresRepository musicGenresRepository) {
+        this.musicGenresRepository = musicGenresRepository;
+    }
+
     @Override
     public List<MusicGenre> getMusicGenres() {
         return null;

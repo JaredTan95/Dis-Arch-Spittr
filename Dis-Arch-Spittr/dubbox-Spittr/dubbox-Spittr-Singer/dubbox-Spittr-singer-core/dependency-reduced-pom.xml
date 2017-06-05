@@ -32,10 +32,10 @@
                   <mainClass>com.alibaba.dubbo.container.Main</mainClass>
                 </transformer>
                 <transformer>
-                  <resource>META-INF/spring.handlers</resource>
+                  <resource>META-INF/META-INF.handlers</resource>
                 </transformer>
                 <transformer>
-                  <resource>META-INF/spring.schemas</resource>
+                  <resource>META-INF/META-INF.schemas</resource>
                 </transformer>
               </transformers>
             </configuration>
