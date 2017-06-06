@@ -5,7 +5,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
 	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-    <dubbo:application name="Spittr-SingleMusic-Service-provider" owner="programmer" organization="cn.tanjianff"/>
+    <dubbo:application name="Spittr-Service-provider" owner="programmer" organization="cn.tanjianff"/>
 
     <dubbo:registry address="zookeeper://123.207.83.185:2181?backup=139.199.89.106:2181,115.159.216.56:2181"/>
 
@@ -43,6 +43,7 @@
 
     <!-- use the external tomcat or other server with the servlet approach; the port and contextpath must be exactly the same as those in external server -->
     <!--<dubbo:protocol name="rest" port="8888" contextpath="services" server="servlet"/>-->
+    <dubbo:protocol name="dubbo" serialization="dubbo" port="20883"/>
 
     <dubbo:protocol name="http" port="8889"/>
   <!--  <dubbo:protocol name="hessian" port="8890"/>

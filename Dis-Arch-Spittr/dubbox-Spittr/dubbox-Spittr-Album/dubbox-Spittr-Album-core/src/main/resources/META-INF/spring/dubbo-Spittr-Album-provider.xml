@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
 	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-    <dubbo:application name="Spittr-Album-Service-provider" owner="programmer" organization="cn.tanjianff"/>
+    <dubbo:application name="Spittr-Service-provider" owner="programmer" organization="cn.tanjianff"/>
 
     <dubbo:registry address="zookeeper://123.207.83.185:2181?backup=139.199.89.106:2181,115.159.216.56:2181"/>
 
-    <dubbo:annotation package="cn.tanjianff.Spittr.album" />
+    <dubbo:annotation package="cn.tanjianff.Spittr.album"/>
+
+    <!--用dubbo协议在20880端口暴露服务-->
+    <dubbo:protocol name="duddo" serialization="dubbo" port="20880" />
 
     <dubbo:protocol name="http" port="8889"/>
+    <!-- use tomcat server -->
+    <dubbo:protocol name="rest" port="8888" threads="500" contextpath="services" server="tomcat" accepts="500"
+                    extension="com.alibaba.dubbo.demo.extension.TraceInterceptor,
+                        com.alibaba.dubbo.demo.extension.TraceFilter,
+                        com.alibaba.dubbo.demo.extension.ClientTraceFilter,
+                        com.alibaba.dubbo.demo.extension.DynamicTraceBinding,
+                        com.alibaba.dubbo.demo.extension.CustomExceptionMapper,
+                        com.alibaba.dubbo.rpc.protocol.rest.support.LoggingFilter"/>
 
     <dubbo:service interface="cn.tanjianff.Spittr.album.AlbumService" ref="albumServiceProvider" protocol="dubbo"/>
 
     <!--引入JavaConfig配置文件，重点引入JdbcTemplate Bean-->
-    <import resource="RootConfig.xml" />
+    <import resource="RootConfig.xml"/>
     <bean id="albumServiceProvider" class="cn.tanjianff.Spittr.album.AlbumServiceProvider">
         <constructor-arg ref="jdbcAlbumsRepository"/>
     </bean>
