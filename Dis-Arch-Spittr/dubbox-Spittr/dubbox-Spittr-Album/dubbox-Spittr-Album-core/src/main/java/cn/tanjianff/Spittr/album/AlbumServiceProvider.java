@@ -42,6 +42,11 @@ public class AlbumServiceProvider implements AlbumService {
     }
 
     @Override
+    public List<Album> getByUpdate() {
+        return albumRepository.orderByPubTime();
+    }
+
+    @Override
     public int getMax() {
         return albumRepository.count();
     }

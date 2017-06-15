@@ -12,7 +12,9 @@ public interface MusicGenresRepository {
 
     List<MusicGenre> findBySongId(String id);
 
-    List getByAlbumId(String id);
+    MusicGenre getByAlbumId(String id);
+
+    List<MusicGenre> getTop(int count);
 
     int count();
 }

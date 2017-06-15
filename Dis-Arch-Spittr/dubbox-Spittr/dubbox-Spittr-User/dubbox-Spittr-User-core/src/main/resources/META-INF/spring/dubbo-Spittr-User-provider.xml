@@ -64,7 +64,7 @@
   <!--  <dubbo:protocol name="hessian" port="8890"/>
     <dubbo:protocol name="webservice" port="8892"/>-->
 
-    <dubbo:service interface="cn.tanjianff.Spittr.user.UserService" ref="userServiceProvider" protocol="dubbo"/>
+    <dubbo:service interface="cn.tanjianff.Spittr.user.UserService" ref="userServiceProvider" protocol="dubbo" timeout="60000"/>
 
 <!--
 	<dubbo:service interface="com.alibaba.dubbo.demo.bid.BidService" ref="bidService"  protocol="dubbo"/>

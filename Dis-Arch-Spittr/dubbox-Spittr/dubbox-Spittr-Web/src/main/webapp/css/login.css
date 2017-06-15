@@ -1,0 +1,446 @@
+@charset "utf-8";
+@import url("icomoon.css");
+
+:focus { outline: 0;}
+table a:hover{
+    text-decoration: underline;
+}
+table {	border-collapse: separate;border-spacing: 0; width: 100%;}
+th, td {text-align: left; font-weight: normal;}
+tr{line-height: 30px;}
+img, iframe {border: none; text-decoration:none;}
+ol, ul {list-style: none;}
+input, textarea, select, button {font-size: 100%;font-family: inherit;}
+object{display: block;}
+/*
+img {
+    vertical-align: middle;
+}*/
+fieldset, figure {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    resize: vertical;
+}
+strong{
+    font-weight:bold;
+}
+em{
+    font-style:italic;
+}
+p{
+    color:#333;
+}
+*,
+*:after,
+*::before{box-sizing:border-box; -ms-box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+
+.overflow-hidden{
+    overflow: hidden !important;
+}
+.hide{
+    display: none;
+}
+.in-block{
+    display: inline-block;
+}
+.text-center{
+    text-align: center;
+}
+.right{
+    float: right
+}
+
+h4{
+    text-align: center;
+    line-height: 1.5em;
+    position: relative;
+    margin: 40px 0 10px 0;
+}
+h4::before{
+    content: '';
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #dbdcdb;
+    position: absolute;
+    top: 50%;
+    z-index: 0;
+}
+h4 span{
+    background: white;
+    position: relative;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-family: 'Lato';
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.iziModal .iziModal-content p{
+    margin-bottom: 10px;
+}
+
+#modal-custom header{
+    background: #eee;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 3px 3px 0 0;
+    width: 100%;
+}
+#modal-custom header a{
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 0;
+    text-align: center;
+    background: #ddd;
+    color: #999;
+    height: 65px;
+    vertical-align: middle;
+    line-height: 65px;
+    font-family: 'Lato', arial;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+#modal-custom header a:not(.active):hover{
+    box-shadow: inset 0 -10px 20px -10px #aaa
+}
+#modal-custom header a.active{
+    background: #fff;
+    color: #f50;
+}
+#modal-custom .sections{
+    overflow: hidden;
+}
+#modal-custom section{
+    padding: 30px;
+}
+#modal-custom section input:not([type="checkbox"]), #modal-custom section button{
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    margin-bottom: 26px;
+    padding: 15px;
+    font-size: 14px;
+}
+#modal-custom section button{
+    height: 46px;
+    padding: 0;
+}
+
+#modal-custom section input:focus{
+    border-color:#f50;
+}
+#modal-custom section label[for="check"]{
+    margin-bottom: 26px;
+    font-size: 14px;
+    color: #999;
+    display: block;
+}
+#modal-custom section footer{
+    overflow: hidden;
+}
+#modal-custom section button{
+    background: #f50;
+    color: white;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    width: 50%;
+    float: left;
+}
+#modal-custom section button:hover{
+    opacity: 0.8;
+}
+#modal-custom section button:nth-child(1){
+    border-radius: 3px 0 0 3px;
+    background: #aaa;
+}
+#modal-custom section button:nth-child(2){
+    border-radius: 0 3px 3px 0;
+}
+
+#modal-custom .icon-close{
+    background: #FFF;
+    margin-bottom: 10px;
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    color: #a9a9a9;
+    cursor: pointer;
+}
+#modal-custom .icon-close:hover, #modal-custom .icon-close:focus{
+    color: black;
+}
+#modal-custom.hasScroll .icon-close{
+    display: none;
+}
+.iziModal .iziModal-header-title{
+    font-family: 'Lato', arial;
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .wrap{
+        padding: 0 20px;
+    }
+
+    table td{
+        padding: 10px 20px;
+    }
+
+    .core{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -140px;
+    }
+
+    .core .buttons .lava{
+        display: block;
+    }
+
+    .touch .cd-nav-trigger, .touch #cd-vertical-nav {
+        bottom: 40px;
+    }
+    .no-touch #cd-vertical-nav {
+        right: 40px;
+        padding:0;
+    }
+    .highlight::after, .modal, .buttons .lava{
+        display: block;
+    }
+    .core h1{
+        font-size: 3em;
+    }
+    .core p{
+        padding: 0;
+        margin-bottom: 25px;
+        font-weight: 400;
+    }
+    .scrollToTop{
+        right: 0;
+        left: auto;
+        bottom: 0;
+        color: #1F919B;
+    }
+    .core .buttons{
+        max-width: none;
+        display: inline-block;
+    }
+    .core .buttons li{
+        display: inline-block;
+        min-width: auto;
+    }
+    .features ul li{
+        display: table-cell;
+        text-align: center;
+        width: 16%;
+    }
+    footer ul li a{
+        padding: 10px;
+    }
+
+}
+
+
+
+.no-touch .first-section #cd-vertical-nav .cd-label{
+    color: #fff;
+}
+
+@-webkit-keyframes wobble {
+    from {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    15% {
+        -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+
+    30% {
+        -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+
+    45% {
+        -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+
+    60% {
+        -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes wobble {
+    from {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    15% {
+        -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+
+    30% {
+        -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+
+    45% {
+        -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+
+    60% {
+        -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.wobble {
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes shake {
+    from, to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+@keyframes shake {
+    from, to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+.shake {
+    -webkit-animation-name: shake;
+    animation-name: shake;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .core{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        top: 0;
+        margin: 0;
+    }
+    .core .examples{
+        width: 125px;
+    }
+    .highlight header{
+        padding: 15px 15px 0 0;
+    }
+    .highlight header a{
+        line-height: 23px;
+    }
+    .highlight header a.github{
+        margin-left: 20px;
+        width: 22px;
+        height: 22px;
+    }
+    .highlight header a.documentation{
+        padding-right: 15px;
+        margin-left: 15px;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .tweets .twitter-tweet{
+        float: none;
+        width: 100% !important;
+        padding:0;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .core h1{
+        font-size: 2.5em;
+    }
+    .core p{
+        font-size: 1em;
+        color: rgb(0, 0, 0);
+    }
+}
+
+@media only screen and (max-height: 530px) {
+    .highlight header{
+        display: none;
+    }
+}
+
+
+.touch .highlight::after, .touch .scrollToTop{
+    display: none;
+}

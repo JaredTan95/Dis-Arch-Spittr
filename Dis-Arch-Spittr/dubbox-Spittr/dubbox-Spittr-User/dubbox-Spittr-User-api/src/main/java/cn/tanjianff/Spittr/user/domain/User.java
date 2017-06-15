@@ -1,10 +1,12 @@
 package cn.tanjianff.Spittr.user.domain;
 
+import java.io.Serializable;
+
 /**
  * Created by tanjian on 2017/5/15.
  *  用户实体
  */
-public class User {
+public class User implements Serializable{
     private String id;
     private String account;
     private String pwdsalt;

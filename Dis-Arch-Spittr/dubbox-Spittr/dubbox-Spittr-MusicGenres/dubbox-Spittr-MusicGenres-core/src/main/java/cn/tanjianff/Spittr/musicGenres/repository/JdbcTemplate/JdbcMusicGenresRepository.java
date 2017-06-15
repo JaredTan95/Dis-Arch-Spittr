@@ -16,8 +16,14 @@ public class JdbcMusicGenresRepository implements MusicGenresRepository {
     private static final String INSERT_INTO="INSERT INTO S_MusicAblumRelationship (s_aid,s_songid) VALUES (?,?);";
     private static final String SELECT_BY_ALBUM_ID="SELECT s_aid,s_songid FROM S_MusicAblumRelationship WHERE s_aid=?;";
     private static final String SELECT_BY_SONG_ID="SELECT s_aid,s_songid FROM S_MusicAblumRelationship WHERE s_songid=?;";
+    private static final String SELET_TOP_CLOUT="SELECT * FROM S_albums order by s_avisRec desc limit ?";
 
-    private static final String SELECT_MUSIC_BY_RELATION="SELECT musAlRel.s_aid,s.s_songid,s.s_singerid,s.s_title,S_singer.s_sname,S_albums.s_atitle,s.s_surl,s.s_visited,s.s_visitedTotal,s.s_dloaded,s.s_scover,s.s_smvurl,s.s_songdescp FROM S_MusicAblumRelationship musAlRel, S_song s, S_singer, S_albums WHERE musAlRel.s_songid=s.s_songid AND S_singer.s_singerid=s.s_singerid AND S_albums.s_aid=musAlRel.s_aid AND musAlRel.s_aid=?";
+    private static final String SELECT_MUSIC_BY_RELATION="SELECT musAlRel.s_aid,s.s_songid,s.s_singerid,s.s_title" +
+            ",S_singer.s_sname,S_albums.s_atitle,s.s_surl,s.s_visited,s.s_visitedTotal" +
+            ",s.s_dloaded,s.s_scover,s.s_smvurl,s.s_songdescp " +
+            "FROM S_MusicAblumRelationship musAlRel, S_song s, S_singer, S_albums " +
+            "WHERE musAlRel.s_songid=s.s_songid AND S_singer.s_singerid=s.s_singerid " +
+            "AND S_albums.s_aid=musAlRel.s_aid AND musAlRel.s_aid=?";
     private JdbcTemplate jdbcTemplate;
 
     public JdbcMusicGenresRepository(JdbcTemplate jdbcTemplate) {
@@ -35,8 +41,13 @@ public class JdbcMusicGenresRepository implements MusicGenresRepository {
     }
 
     @Override
-    public List<MusicGenre> getByAlbumId(String id) {
-        return jdbcTemplate.query(SELECT_BY_ALBUM_ID,new MusicGenresRowMapper());
+    public MusicGenre getByAlbumId(String id) {
+        return jdbcTemplate.queryForObject(SELECT_BY_ALBUM_ID,new MusicGenresRowMapper());
+    }
+
+    @Override
+    public List<MusicGenre> getTop(int count) {
+        return jdbcTemplate.query(SELET_TOP_CLOUT,new MusicGenresRowMapper(),count);
     }
 
     @Override

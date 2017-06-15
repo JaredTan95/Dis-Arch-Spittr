@@ -19,7 +19,7 @@ public class JdbcAlbumsRepository implements AlbumRepository {
     private static final String COUNT="SELECT s_aid,s_singerid,s_atitle,s_apubTime,s_adescp,s_avisRec,s_aCoverUrl FROM S_albums";
     private static final String SELECT_BY_ID="SELECT s_aid,s_singerid,s_atitle,s_apubTime,s_adescp,s_avisRec,s_aCoverUrl FROM S_albums WHERE s_aid=?;";
     private static final String SELECT_BY_SINGER_ID="SELECT s_aid,s_singerid,s_atitle,s_apubTime,s_adescp,s_avisRec,s_aCoverUrl FROM S_albums WHERE s_singerid=?;";
-    private static final String ORDER_BY_PUBTIME="SELECT s_aid,s_singerid,s_atitle,s_apubTime,s_adescp,s_avisRec,s_aCoverUrl FROM S_albums ORDER BY s_apubTime DESC;";
+    private static final String ORDER_BY_PUBTIME="SELECT s_aid,s_singerid,s_atitle,s_apubTime,s_adescp,s_avisRec,s_aCoverUrl FROM S_albums ORDER BY s_apubTime DESC LIMIT 12;";
     private static final String SELECT_ALL="SELECT s_aid,s_singerid,s_atitle,s_apubTime,s_adescp,s_avisRec,s_aCoverUrl FROM S_albums;";
     private static final String SELECT_BY_VIS="SELECT s_aid,s_singerid,s_atitle,s_apubTime,s_adescp,s_avisRec,s_aCoverUrl FROM S_albums ORDER BY s_avisRec DESC;";
     private static final String SELECT_BY_TITLE_REG="SELECT s_aid,s_singerid,s_atitle,s_apubTime,s_adescp,s_avisRec,s_aCoverUrl FROM S_albums WHERE s_atitle REGEXP ?;";

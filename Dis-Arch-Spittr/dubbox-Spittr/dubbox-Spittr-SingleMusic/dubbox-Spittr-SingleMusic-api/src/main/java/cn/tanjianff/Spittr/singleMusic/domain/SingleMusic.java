@@ -1,10 +1,12 @@
 package cn.tanjianff.Spittr.singleMusic.domain;
 
+import java.io.Serializable;
+
 /**
  * Created by tanjian on 2017/5/15.
  * 单曲实体
  */
-public class SingleMusic {
+public class SingleMusic implements Serializable{
     private String songId;
     private String singerId;
     private String title;

@@ -11,14 +11,14 @@ import java.util.List;
 public class MusicGenresProvider implements MusicGenresService {
     private MusicGenresRepository musicGenresRepository;
 
-    //TODO:专辑服务未完善
+    //TODO:专辑服务未完善,分页
     public MusicGenresProvider(MusicGenresRepository musicGenresRepository) {
         this.musicGenresRepository = musicGenresRepository;
     }
 
     @Override
-    public List<MusicGenre> getMusicGenres() {
-        return null;
+    public List<MusicGenre> getMusicGenres(int count) {
+        return musicGenresRepository.getTop(count);
     }
 
     @Override
@@ -28,7 +28,7 @@ public class MusicGenresProvider implements MusicGenresService {
 
     @Override
     public MusicGenre getByMusicGenreId(String id) {
-        return null;
+        return musicGenresRepository.getByAlbumId(id);
     }
 
     @Override

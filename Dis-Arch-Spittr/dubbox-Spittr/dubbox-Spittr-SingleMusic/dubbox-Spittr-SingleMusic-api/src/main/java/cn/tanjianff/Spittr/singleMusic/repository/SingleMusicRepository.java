@@ -24,5 +24,7 @@ public interface SingleMusicRepository {
 
     List<SingleMusic> OrderByDloaded();
 
+    List<SingleMusic> OrderByUpDate();
+
     boolean IncrVisit(String songId);
 }

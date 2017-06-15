@@ -7,11 +7,14 @@
           <element id="module-output" name="dubbox-Spittr-Web" />
         </element>
         <element id="directory" name="lib">
-          <element id="archive" name="dubbox-Spittr-Album-core-1.0-SNAPSHOT.jar">
-            <element id="module-output" name="dubbox-Spittr-Album-core" />
-          </element>
           <element id="archive" name="dubbox-Spittr-Album-api-1.0-SNAPSHOT.jar">
             <element id="module-output" name="dubbox-Spittr-Album-api" />
+          </element>
+          <element id="archive" name="dubbox-Spittr-User-api-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="dubbox-Spittr-User-api" />
+          </element>
+          <element id="archive" name="dubbox-Spittr-SingleMusic-api-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="dubbox-Spittr-SingleMusic-api" />
           </element>
           <element id="library" level="project" name="Maven: com.alibaba:dubbo:2.8.4" />
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />

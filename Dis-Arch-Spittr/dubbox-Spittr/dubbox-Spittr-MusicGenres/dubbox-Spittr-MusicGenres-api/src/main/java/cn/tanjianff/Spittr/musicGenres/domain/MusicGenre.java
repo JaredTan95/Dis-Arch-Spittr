@@ -1,10 +1,12 @@
 package cn.tanjianff.Spittr.musicGenres.domain;
 
+import java.io.Serializable;
+
 /**
  * Created by tanjian on 2017/5/15.
  * 专辑-单曲关系实体
  */
-public class MusicGenre {
+public class MusicGenre implements Serializable{
     private String albumId;
     private String musicId;
 

@@ -52,6 +52,11 @@ public class SingleMusicServiceProvider implements SingleMusicService {
     }
 
     @Override
+    public List<SingleMusic> getByUpDate() {
+        return singleMusicRepository.OrderByUpDate();
+    }
+
+    @Override
     public int getMax() {
         return singleMusicRepository.count();
     }
