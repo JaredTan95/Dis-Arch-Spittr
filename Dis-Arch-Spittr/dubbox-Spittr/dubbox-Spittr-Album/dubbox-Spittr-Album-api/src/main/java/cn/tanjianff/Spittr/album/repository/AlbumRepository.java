@@ -24,4 +24,6 @@ public interface AlbumRepository {
     List<Album> ListByVis();
 
     List<Album> findByTitle(String title);
+
+    List<Album> findByVisited(int lmt);
 }

@@ -25,7 +25,7 @@ public class JdbcSingleMusicRepository implements SingleMusicRepository {
             "VALUES (?,?,?,?,?,?,?,?,?,?)";
     private static final String QUERY_BY_VISITEDNUM="SELECT s_songid,s_singerid,s_title,s_surl,s_visited," +
             "s_visitedTotal,s_dloaded,s_scover,s_smvurl,s_songdescp" +
-            " FROM S_song ORDER BY s_visitedTotal DESC LIMIT 8;";
+            " FROM S_song ORDER BY s_visitedTotal DESC LIMIT ?;";
     private static final String QUERY_BY_DOWNLOADEDNUM="SELECT s_songid,s_singerid,s_title,s_surl,s_visited," +
             "s_visitedTotal,s_dloaded,s_scover,s_smvurl,s_songdescp" +
             " FROM S_song ORDER BY s_dloaded DESC LIMIT 8;";
@@ -73,8 +73,8 @@ public class JdbcSingleMusicRepository implements SingleMusicRepository {
     }
 
     @Override
-    public List<SingleMusic> OrderByVisited() {
-        return jdbcTemplate.query(QUERY_BY_VISITEDNUM,new SingleMusicRowMapper());
+    public List<SingleMusic> OrderByVisited(int lmt) {
+        return jdbcTemplate.query(QUERY_BY_VISITEDNUM,new SingleMusicRowMapper(),lmt);
     }
 
     @Override

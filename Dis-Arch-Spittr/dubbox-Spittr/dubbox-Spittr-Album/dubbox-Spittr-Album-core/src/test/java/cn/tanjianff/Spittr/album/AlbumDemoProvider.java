@@ -1,6 +1,6 @@
-package cn.tanjianff.Spittr.singleMusic;
+package cn.tanjianff.Spittr.album;
 
-public class DemoProvider {
+public class AlbumDemoProvider {
 
 	public static void main(String[] args) {
 

@@ -1008,3 +1008,224 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: #666;
 }
+
+footer.page-footer {
+  width: 800px;
+  background-color: #1C2331;
+  margin-top: -1px;
+  margin-bottom: 80px;
+}
+
+footer .audioPlayerPanel {
+  position: fixed;
+  bottom: 0;
+  z-index: 12345;
+  background-color: rgb(38, 50, 61);
+  width: 100%;
+  height: 75px;
+  opacity: 0.8;
+}
+
+footer .audioPlayerPanel i:hover {
+  cursor: pointer;
+}
+
+/*=====================music player bar css=======================*/
+footer .audioPlayer .musicPic {
+  overflow: hidden;
+  width: 70px;
+  border-radius: 35px;
+  height: 70px;
+  float: left;
+}
+
+footer .audioPlayer .musicPic img {
+  border-radius: 5px;
+  width:100%;
+  height:auto;
+  margin: 5px  auto;
+  /* max-width: 70px;
+   max-height: 70px;
+   border: 1px solid #fdf7f7;*/
+}
+
+footer .audioPlayer {
+  display: block;
+}
+footer .audioPlayer .controls .play-controls{
+  /*margin-top: 18px;*/
+}
+footer .audioPlayer .controls .play-controls a {
+/*  display: inline-block;
+  width: 35px;
+  height: 40px;*/
+}
+
+footer .audioPlayer .musicOpr {
+/*  margin-top: 40px;
+  height: 40px;*/
+}
+
+footer .audioPlayer .musicOpr .volume-level {
+  background: rgba(225, 225, 225, 0.3);
+}
+
+footer .audioPlayer .volume-level span {
+  /*height: 2px;*/
+}
+
+footer .audioPlayer .volume-level span:after {
+  right: -11px;
+  top: -8px;
+  width: 22px;
+  height: 22px;
+  background-image: url("/css/audioPlayer/V5i67V2.png");
+}
+
+footer .audioPlayer .volume-level a {
+  position: absolute;
+  right: 40px;
+  top: -8px;
+  width: 22px;
+}
+
+footer .audioPlayer .volume-level a.icon-volume-down {
+  right: auto;
+  left: -15px;
+}
+
+footer .audioPlayer .info {
+  width: 100px;
+  height: auto;
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+footer .audioPlayer .info .jp-playlist li {
+  /*display: none;*/
+}
+
+footer .audioPlayer .info .jp-playlist li a {
+  text-decoration: none;
+  color: #fff;
+  color: rgba(225, 225, 225, 0.4);
+}
+
+footer .audioPlayer .info .jp-playlist li a span {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+footer .audioPlayer .info .jp-playlist li.jp-playlist-current {
+  display: block;
+}
+
+footer .audioPlayer .info .jp-playlist li .jp-free-media, .audioPlayer .info .jp-playlist li .jp-playlist-item-remove {
+  display: none;
+}
+
+footer .audioPlayer .info .right {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+footer .audioPlayer .info  .current {
+  color: rgba(225, 225, 225, 0.4);
+  position: relative;
+  left: 5px;
+  bottom: 5px;
+}
+
+footer .audioPlayer .info [class^="icon-"] {
+  margin: 0 0 10px;
+}
+
+footer .audioPlayer .info .center {
+  padding: 8px 0 0 0;
+}
+
+footer .audioPlayer .progress {
+  width: 90%;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: -10px 0 5px 0;
+  height: 5px;
+  display: block;
+  background: rgba(225, 225, 225, 0.3);
+  cursor: pointer;
+}
+
+footer .audioPlayer .volume-level {
+  width: 60%;
+  height: 5px;
+  display: block;
+  background: #000;
+  cursor: pointer;
+}
+
+footer .audioPlayer .progress span, .audioPlayer .volume-level span {
+  position: relative;
+  display: block;
+  background: #ed553b;
+  width: 0%;
+  height: 5px;
+}
+
+footer .audioPlayer .progress span:after, .audioPlayer .volume-level span:after {
+  position: absolute;
+  right: -5px;
+  top: -6px;
+  content: "";
+  width: 10px;
+  height: 20px;
+  background: url("") no-repeat center;
+}
+
+footer [class^="icon-"] {
+  width: 18px;
+  height: 18px;
+  background: url("/css/audioPlayer/E09T8tf.png") no-repeat center;
+  display: inline-block;
+}
+
+footer .audioPlayer .icon-heart {
+  background-image: url("/css/audioPlayer/E09T8tf.png");
+}
+
+footer .audioPlayer .icon-repeat {
+  background-image: url("/css/audioPlayer/338F8MX.png");
+}
+
+footer .audioPlayer .icon-share {
+  background-image: url("/css/audioPlayer/PGIC6ME.png");
+}
+
+footer .audioPlayer .icon-previous {
+  background-image: url("/css/audioPlayer/ic_skip_previous_grey600_24dp.png");
+
+}
+
+footer .audioPlayer .icon-play {
+  background-image: url("/css/audioPlayer/ic_play_arrow_grey600_24dp.png");
+}
+
+footer .audioPlayer .icon-pause {
+  background-image: url("/css/audioPlayer/ic_pause_grey600_24dp.png");
+}
+
+footer .audioPlayer .icon-next {
+  background-image: url("/css/audioPlayer/ic_skip_next_grey600_24dp.png");
+}
+
+footer .audioPlayer .icon-volume-up {
+  background-image: url("/css/audioPlayer/ic_volume_up_grey600_18dp.png");
+}
+
+footer .audioPlayer .icon-volume-down {
+  background-image: url("/css/audioPlayer/ic_volume_mute_grey600_18dp.png");
+}
+/*=====================music player bar css end=======================*/

@@ -47,6 +47,11 @@ public class AlbumServiceProvider implements AlbumService {
     }
 
     @Override
+    public List<Album> getByVisited(int lmt) {
+        return albumRepository.findByVisited(lmt);
+    }
+
+    @Override
     public int getMax() {
         return albumRepository.count();
     }

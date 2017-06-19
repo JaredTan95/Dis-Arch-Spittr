@@ -1,6 +1,6 @@
-package cn.tanjianff.Spittr.album;
+package cn.tanjianff.Spittr.user;
 
-public class DemoProvider {
+public class UserDemoProvider {
 
 	public static void main(String[] args) {
 

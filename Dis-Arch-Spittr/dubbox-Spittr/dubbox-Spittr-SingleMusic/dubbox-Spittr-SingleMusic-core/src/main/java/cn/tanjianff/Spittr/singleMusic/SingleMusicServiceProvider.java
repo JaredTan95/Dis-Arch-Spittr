@@ -42,8 +42,8 @@ public class SingleMusicServiceProvider implements SingleMusicService {
     }
 
     @Override
-    public List<SingleMusic> getByVisited() {
-        return singleMusicRepository.OrderByVisited();
+    public List<SingleMusic> getByVisited(int lmt) {
+        return singleMusicRepository.OrderByVisited(lmt);
     }
 
     @Override

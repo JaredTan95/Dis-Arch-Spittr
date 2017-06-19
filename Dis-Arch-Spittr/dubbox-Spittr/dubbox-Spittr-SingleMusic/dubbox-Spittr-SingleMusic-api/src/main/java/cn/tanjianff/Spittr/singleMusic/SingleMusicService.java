@@ -16,7 +16,7 @@ public interface SingleMusicService extends Serializable{
     SingleMusic getById(String id);
     List<SingleMusic> getBySingerID(String id);
     List<SingleMusic> getByTitle(String title);
-    List<SingleMusic> getByVisited();
+    List<SingleMusic> getByVisited(int lmt);
     List<SingleMusic> getByDloaded();
     List<SingleMusic> getByUpDate();
     int getMax();

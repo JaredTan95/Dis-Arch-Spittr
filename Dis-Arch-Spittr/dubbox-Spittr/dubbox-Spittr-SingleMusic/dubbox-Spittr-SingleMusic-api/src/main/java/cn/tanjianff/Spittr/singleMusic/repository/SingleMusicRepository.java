@@ -20,7 +20,7 @@ public interface SingleMusicRepository {
 
     List<SingleMusic> findByTitle(String title);
 
-    List<SingleMusic> OrderByVisited();
+    List<SingleMusic> OrderByVisited(int lmt);
 
     List<SingleMusic> OrderByDloaded();
 

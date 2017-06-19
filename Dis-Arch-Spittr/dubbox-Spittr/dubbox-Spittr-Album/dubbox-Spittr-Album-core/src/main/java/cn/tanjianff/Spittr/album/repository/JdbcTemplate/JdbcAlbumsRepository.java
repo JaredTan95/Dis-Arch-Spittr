@@ -24,6 +24,7 @@ public class JdbcAlbumsRepository implements AlbumRepository {
     private static final String SELECT_BY_VIS="SELECT s_aid,s_singerid,s_atitle,s_apubTime,s_adescp,s_avisRec,s_aCoverUrl FROM S_albums ORDER BY s_avisRec DESC;";
     private static final String SELECT_BY_TITLE_REG="SELECT s_aid,s_singerid,s_atitle,s_apubTime,s_adescp,s_avisRec,s_aCoverUrl FROM S_albums WHERE s_atitle REGEXP ?;";
     private static final String DELETE_BY_ID="DELETE * FROM S_albums WHERE s_aid=?";
+    private static final String FIND_BY_VISITED="SELECT s_aid,s_singerid,s_atitle,s_apubTime,s_adescp,s_avisRec,s_aCoverUrl FROM S_albums ORDER BY s_avisRec DESC LIMIT ?";
 
     private JdbcTemplate jdbcTemplate;
 
@@ -64,6 +65,11 @@ public class JdbcAlbumsRepository implements AlbumRepository {
 
     public List<Album> findByTitle(String title) {
         return jdbcTemplate.query(SELECT_BY_TITLE_REG,new AlbumRowMapper(),title);
+    }
+
+    @Override
+    public List<Album> findByVisited(int lmt) {
+        return jdbcTemplate.query(FIND_BY_VISITED,new AlbumRowMapper(),lmt);
     }
 
     private static class AlbumRowMapper implements RowMapper<Album>{

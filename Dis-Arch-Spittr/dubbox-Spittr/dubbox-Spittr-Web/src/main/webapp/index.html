@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/login.css">
     <link rel="stylesheet" type="text/css" href="css/iziModal.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/scroll.css">-->
+    <link rel="stylesheet" type="text/css" href="css/play_audio.css">
     <script src="js/baiduTemplate.js"></script>
 </head>
 <body>
@@ -580,6 +582,60 @@
     </div>
 </div>
 
+
+<div class="bottom">
+    <div class="playerWrap" id="jquery_jplayer_1">
+        <div class="playerCon">
+            <a href="#!" class="pbtn prevBtn jp-previous"></a>
+            <a href="#!" class="pbtn playBtn jp-play"></a>
+            <a href="#!" class="pbtn pauseBtn jp-pause"></a>
+            <a href="#!" class="pbtn nextBtn jp-next"></a>
+            <a href="#!" class="mode"></a>
+        </div>
+        <div class="playInfo">
+            <div class="trackInfo">
+                <a href="#!" class="songName" data-songId=''></a>
+                <span></span>
+
+                <a href="#" class="songPlayer"></a>
+                <div class="trackCon ">
+                    <div class="jp-playlist">
+                        <ul>
+                            <li></li> <!-- Empty <li> so your HTML conforms with the W3C spec -->
+                        </ul>
+                    </div>
+                    <a href="#" class="tc1"></a>
+                    <a href="#" class="tc2"></a>
+                    <a href="#" class="tc3"></a>
+                </div>
+            </div>
+            <div class="playerLength">
+                <div class="position jp-current-time">00:00</div>
+                <div class="progress jp-seek-bar">
+                    <div class="pro1 jp-play-bar"></div>
+                    <div class="pro2 ">
+                        <a href="#" class="dian"></a>
+                    </div>
+                </div>
+                <div class="duration jp-duration">00:00</div>
+            </div>
+        </div>
+        <div class="vol">
+            <a href="#" class="pinBtn"></a>
+            <div class="volm">
+                <div class="volSpeaker jp-mute"></div>
+                <div class="volControl jp-volume-bar">
+                   <!-- <a href="#" class="dian2"></a>-->
+                </div>
+                <div class="volSpeakerMax jp-volume-max"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="jp_container_1" class="jp-jplayer"></div>
+
+
 <!-- footer -->
 <footer class="footer">
     <div class="footer-inner">
@@ -641,7 +697,6 @@
     </div>
 </footer>
 
-
 <!-- 分享到 -->
 <ul class="slider-share">
     <li><a href="#">
@@ -661,6 +716,14 @@
 </ul>
 
 <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.pjax.js"></script>
+<script type="text/javascript" src="js/canvas.js"></script>
+<!--<script type="text/javascript" src="js/mousewheel.js"></script>-->
+<!--<script type="text/javascript" src="js/scroll.js"></script>-->
+<!--<script type="text/javascript" src="js/play_music.js"></script>-->
 <script src="js/jquery.cookie.js"></script>
 <script src="js/iziModal.min.js" type="text/javascript"></script>
 <script src="js/script.js"></script>
