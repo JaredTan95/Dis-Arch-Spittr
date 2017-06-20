@@ -36,6 +36,7 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
@@ -52,6 +53,20 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="Spittr@123.207.83.185" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="Spittr" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -59,9 +74,13 @@
       <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/java/cn/tanjianff/contorller/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="390">
               <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1054#1055#0" expanded="false" />
+                <element signature="e#1084#1085#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,25 +88,33 @@
       <file leaf-file-name="PopularController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/java/cn/tanjianff/contorller/PopularController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
+            <state relative-caret-position="660">
               <caret line="55" column="25" lean-forward="false" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1451#1452#0" expanded="true" />
-                <element signature="e#1504#1505#0" expanded="true" />
-                <element signature="e#1710#1711#0" expanded="true" />
-                <element signature="e#1769#1770#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#1451#1452#0" expanded="false" />
+                <element signature="e#1504#1505#0" expanded="false" />
+                <element signature="e#1710#1711#0" expanded="false" />
+                <element signature="e#1769#1770#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbox-Spittr/pom.xml">
+      <file leaf-file-name="LatestReleasesController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/java/cn/tanjianff/contorller/LatestReleasesController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="585">
+              <caret line="53" column="41" lean-forward="false" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1566#1567#0" expanded="false" />
+                <element signature="e#1621#1622#0" expanded="false" />
+                <element signature="e#1729#1730#0" expanded="false" />
+                <element signature="e#1778#1779#0" expanded="false" />
+                <element signature="e#1892#1893#0" expanded="false" />
+                <element signature="e#1952#1953#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,36 +122,13 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/java/cn/tanjianff/contorller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+            <state relative-caret-position="225">
+              <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#853#854#0" expanded="true" />
-                <element signature="e#932#933#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#905#906#0" expanded="false" />
+                <element signature="e#984#985#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LatestReleasesController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/java/cn/tanjianff/contorller/LatestReleasesController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-              <folding>
-                <element signature="e#1729#1730#0" expanded="true" />
-                <element signature="e#1778#1779#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dubbo-Spittr-consumer-web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/resources/dubbo-Spittr-consumer-web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="37" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -132,22 +136,29 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="721" column="53" lean-forward="false" selection-start-line="721" selection-start-column="53" selection-end-line="721" selection-end-column="53" />
+            <state relative-caret-position="300">
+              <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
               <folding>
-                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#nav#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#5990#7481#0" expanded="false" />
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#ul#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1497877790000" expanded="true" signature="25376:27316" ph="..." />
+                <marker date="1497969138000" expanded="false" signature="25445:25461" ph="..." />
+                <marker date="1497969138000" expanded="true" signature="25500:27720" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="373" column="15" lean-forward="false" selection-start-line="373" selection-start-column="15" selection-end-line="373" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -155,8 +166,18 @@
       <file leaf-file-name="play_audio.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/css/play_audio.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="583" column="1" lean-forward="false" selection-start-line="583" selection-start-column="1" selection-end-line="583" selection-end-column="1" />
+            <state relative-caret-position="9510">
+              <caret line="634" column="14" lean-forward="false" selection-start-line="633" selection-start-column="17" selection-end-line="634" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/layer/skin/spittrMv/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -165,14 +186,15 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="100" column="6" lean-forward="true" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
+            <state relative-caret-position="870">
+              <caret line="60" column="44" lean-forward="false" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
               <folding>
                 <element signature="e#0#43#0" expanded="false" />
-                <element signature="e#2505#3574#0" expanded="false" />
-                <element signature="e#3724#4825#0" expanded="false" />
-                <element signature="e#4985#6375#0" expanded="false" />
-                <element signature="e#5934#6373#0" expanded="false" />
+                <element signature="e#3982#5051#0" expanded="false" />
+                <element signature="e#5201#6302#0" expanded="false" />
+                <element signature="e#6462#7855#0" expanded="false" />
+                <element signature="e#7414#7853#0" expanded="false" />
+                <marker date="1497958178000" expanded="true" signature="8906:8939" ph="..." />
               </folding>
             </state>
           </provider>
@@ -188,6 +210,7 @@
         <option value="JavaScript File" />
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -204,11 +227,17 @@
       <find>blur</find>
       <find>.trackInfo a</find>
       <find>songN</find>
+      <find>#f50</find>
+      <find>molv</find>
+      <find>.layui-layer-molv</find>
+      <find>font-fa</find>
+      <find>logo</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;version&gt;${spring.version}&lt;/version&gt;</replace>
       <replace>&lt;version&gt;${spring.version} &lt;/version&gt;</replace>
       <replace>/css/</replace>
+      <replace>rgba(255, 85, 0, 0.79)</replace>
     </replaceStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -219,29 +248,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-MusicGenres/dubbox-Spittr-MusicGenres-core/src/test/java/album/DemoProvider.java" />
-        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-MusicGenres/dubbox-Spittr-MusicGenres-core/src/test/java/cn/tanjianff/Spittr/musicGenres/DemoProvider.java" />
-        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-MusicGenres/dubbox-Spittr-MusicGenres-core/src/main/resources/META-INF/spring/RootConfig.xml" />
-        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-User/dubbox-Spittr-User-core/src/test/java/cn/tanjianff/Spittr/user/DemoProvider.java" />
-        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album-core/src/assembly/conf/datasource.properties" />
-        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album-core/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Singer/dubbox-Spittr-singer-core/src/main/java/cn/tanjianff/Spittr/singer/SingerRestServiceIProvider.java" />
-        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Singer/dubbox-Spittr-singer-core/src/main/resources/META-INF/spring/dubbo-Spittr-Singer-provider.xml" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-MusicGenres/dubbox-Spittr-MusicGenres-core/src/main/resources/META-INF/spring/dubbo-Spittr-MusicGenres-provider.xml" />
-        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic-core/src/main/resources/META-INF/spring/dubbo-Spittr-SingleMusic-provider.xml" />
-        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album-core/src/main/resources/META-INF/spring/dubbo-Spittr-Album-provider.xml" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-MusicGenres/dubbox-Spittr-MusicGenres-core/pom.xml" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic-core/pom.xml" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-User/dubbox-Spittr-User-core/pom.xml" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/pom.xml" />
-        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-User/dubbox-Spittr-User-core/src/main/resources/META-INF/spring/dubbo-Spittr-User-provider.xml" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-MusicGenres/dubbox-Spittr-MusicGenres-api/src/main/java/cn/tanjianff/Spittr/musicGenres/repository/MusicGenresRepository.java" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-MusicGenres/dubbox-Spittr-MusicGenres-core/src/main/java/cn/tanjianff/Spittr/musicGenres/repository/JdbcTemplate/JdbcMusicGenresRepository.java" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-MusicGenres/dubbox-Spittr-MusicGenres-core/src/main/java/cn/tanjianff/Spittr/musicGenres/MusicGenresProvider.java" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/java/cn/tanjianff/contorller/RecommendController.java" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/js/loadData.js" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/js/script.js" />
-        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-User/dubbox-Spittr-User-api/src/main/java/cn/tanjianff/Spittr/user/UserService.java" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-User/dubbox-Spittr-User-api/src/main/java/cn/tanjianff/Spittr/user/domain/User.java" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/java/cn/tanjianff/contorller/BootstrapContext.java" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic-api/src/main/java/cn/tanjianff/Spittr/singleMusic/domain/SingleMusic.java" />
@@ -249,27 +266,39 @@
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-MusicGenres/dubbox-Spittr-MusicGenres-api/src/main/java/cn/tanjianff/Spittr/musicGenres/domain/MusicGenre.java" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-MusicGenres/dubbox-Spittr-MusicGenres-api/src/main/java/cn/tanjianff/Spittr/musicGenres/MusicGenresService.java" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/resources/dubbo-Spittr-consumer-web.xml" />
-        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/java/cn/tanjianff/contorller/LatestReleasesController.java" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/java/cn/tanjianff/config/WebConfig.java" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/play_audio.html" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/java/cn/tanjianff/contorller/HomeController.java" />
-        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/css/index.css" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/js/play_music.js" />
-        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/css/play_audio.css" />
-        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/js/app.js" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album-api/src/main/java/cn/tanjianff/Spittr/album/repository/AlbumRepository.java" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album-core/src/main/java/cn/tanjianff/Spittr/album/repository/JdbcTemplate/JdbcAlbumsRepository.java" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album-api/src/main/java/cn/tanjianff/Spittr/album/AlbumService.java" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album-core/src/main/java/cn/tanjianff/Spittr/album/AlbumServiceProvider.java" />
+        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/java/cn/tanjianff/contorller/PopularController.java" />
+        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-User/dubbox-Spittr-User-api/src/main/java/cn/tanjianff/Spittr/user/UserService.java" />
+        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-User/dubbox-Spittr-User-core/src/main/java/cn/tanjianff/Spittr/user/UserServiceProvider.java" />
+        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-User/dubbox-Spittr-User-api/src/main/java/cn/tanjianff/Spittr/user/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-User/dubbox-Spittr-User-core/src/main/java/cn/tanjianff/Spittr/user/repository/JdbcTemplate/JdbcUserRepository.java" />
+        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/java/cn/tanjianff/contorller/UserController.java" />
+        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic-api/pom.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/idea.properties" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/36573fdc-7dda-46fe-bb32-f82c8e6fafc9/console.sql" />
-        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic-api/src/main/java/cn/tanjianff/Spittr/singleMusic/SingleMusicService.java" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic-core/src/main/java/cn/tanjianff/Spittr/singleMusic/repository/JdbcTemplate/JdbcSingleMusicRepository.java" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic-api/src/main/java/cn/tanjianff/Spittr/singleMusic/repository/SingleMusicRepository.java" />
+        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic-api/src/main/java/cn/tanjianff/Spittr/singleMusic/SingleMusicService.java" />
         <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic-core/src/main/java/cn/tanjianff/Spittr/singleMusic/SingleMusicServiceProvider.java" />
-        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/java/cn/tanjianff/contorller/UserController.java" />
-        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/java/cn/tanjianff/contorller/PopularController.java" />
+        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/java/cn/tanjianff/contorller/LatestReleasesController.java" />
+        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/layer/mobile/need/layer.css" />
+        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/layer/skin/spittrMv/style.css" />
+        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/js/app.js" />
+        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/css/play_audio.css" />
+        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/css/index.css" />
+        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album-core/src/main/resources/META-INF/spring/dubbo-Spittr-Album-provider.xml" />
+        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic-core/src/main/resources/META-INF/spring/dubbo-Spittr-SingleMusic-provider.xml" />
+        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-User/dubbox-Spittr-User-core/src/main/resources/META-INF/spring/dubbo-Spittr-User-provider.xml" />
+        <option value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Singer/dubbox-Spittr-singer-core/src/main/resources/META-INF/spring/dubbo-Spittr-Singer-provider.xml" />
       </list>
     </option>
   </component>
@@ -378,6 +407,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -390,261 +420,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dis-Arch-Spittr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr-Web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dis-Arch-Spittr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr-Web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dis-Arch-Spittr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr-Web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dis-Arch-Spittr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr-Web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tanjianff" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="contorller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dis-Arch-Spittr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr-Web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tanjianff" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dis-Arch-Spittr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr-User" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dis-Arch-Spittr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr-User" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr-User-core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dis-Arch-Spittr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr-User" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr-User-core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dis-Arch-Spittr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr-User" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr-User-core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dis-Arch-Spittr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr-User" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr-User-core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dis-Arch-Spittr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dubbox-Spittr-SingleMusic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -662,6 +441,7 @@
     <property name="FullScreen" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-MusicGenres/dubbox-Spittr-MusicGenres-core/src/main/java/cn/tanjianff/Spittr/musicGenres" />
     <property name="SearchEverywhereHistoryKey" value="item&#9;null&#9;null" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -683,34 +463,26 @@
       <recent name="cn.tanjianff.Spittr.album" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/js" />
+      <recent name="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/images" />
       <recent name="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/css/images" />
-      <recent name="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/css" />
       <recent name="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album-core/src/main/resources" />
+      <recent name="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/js" />
+      <recent name="$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/css" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="Tomcat Server.Spittr-Tomcat7.0">
-    <configuration default="false" name="SingleMusicDemoProvider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cn.tanjianff.Spittr.singleMusic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="cn.tanjianff.Spittr.singleMusic.SingleMusicDemoProvider" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="dubbox-Spittr-SingleMusic-core" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="AlbumDemoProvider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -771,14 +543,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="DemoProvider (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="SingerDemoProvider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="cn.tanjianff.Spittr.singer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="cn.tanjianff.Spittr.singer.DemoProvider" />
+      <option name="MAIN_CLASS_NAME" value="cn.tanjianff.Spittr.singer.SingerDemoProvider" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -788,6 +560,26 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="dubbox-Spittr-singer-core" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SingleMusicDemoProvider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cn.tanjianff.Spittr.singleMusic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="cn.tanjianff.Spittr.singleMusic.SingleMusicDemoProvider" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="dubbox-Spittr-SingleMusic-core" />
       <envs />
       <method />
     </configuration>
@@ -1073,6 +865,13 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
       <config-file value="" />
       <node-interpreter value="project" />
@@ -1137,40 +936,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <classRegexps />
-      <testRegexps />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <classRegexps />
-      <testRegexps />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1225,23 +990,6 @@
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
-      <method />
-    </configuration>
-    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <classRegexps />
-      <testRegexps />
-      <envs />
       <method />
     </configuration>
     <configuration default="false" name="Spittr-Tomcat7.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.70" ALTERNATIVE_JRE_ENABLED="false">
@@ -1318,19 +1066,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Spittr-Tomcat7.0" />
-      <item index="1" class="java.lang.String" itemvalue="Application.SingleMusicDemoProvider" />
-      <item index="2" class="java.lang.String" itemvalue="Application.AlbumDemoProvider" />
-      <item index="3" class="java.lang.String" itemvalue="Application.DemoProvider (3)" />
-      <item index="4" class="java.lang.String" itemvalue="Application.UserDemoProvider" />
-      <item index="5" class="java.lang.String" itemvalue="Application.DemoProvider (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Application.AlbumDemoProvider" />
+      <item index="2" class="java.lang.String" itemvalue="Application.DemoProvider (3)" />
+      <item index="3" class="java.lang.String" itemvalue="Application.UserDemoProvider" />
+      <item index="4" class="java.lang.String" itemvalue="Application.SingerDemoProvider" />
+      <item index="5" class="java.lang.String" itemvalue="Application.SingleMusicDemoProvider" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.UserDemoProvider" />
         <item index="1" class="java.lang.String" itemvalue="Application.SingleMusicDemoProvider" />
         <item index="2" class="java.lang.String" itemvalue="Application.AlbumDemoProvider" />
-        <item index="3" class="java.lang.String" itemvalue="Application.DemoProvider (3)" />
-        <item index="4" class="java.lang.String" itemvalue="Application.DemoProvider (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Application.SingerDemoProvider" />
+        <item index="4" class="java.lang.String" itemvalue="Application.DemoProvider (3)" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
@@ -1398,11 +1146,16 @@
       <workItem from="1497830108357" duration="1958000" />
       <workItem from="1497837811401" duration="4245000" />
       <workItem from="1497852284129" duration="25240000" />
+      <workItem from="1497917225582" duration="2022000" />
+      <workItem from="1497927165716" duration="1801000" />
+      <workItem from="1497933186208" duration="5834000" />
+      <workItem from="1497947557831" duration="11500000" />
+      <workItem from="1497973048301" duration="918000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147725000" />
+    <option name="totallyTimeSpent" value="169800000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1414,35 +1167,34 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3260274" sideWeight="0.49353796" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32670453" sideWeight="0.50646204" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43150684" sideWeight="0.5048465" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16397415" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20193861" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43150684" sideWeight="0.4951535" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43150684" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49863014" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49863014" sideWeight="0.49676898" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24474959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26494345" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3260274" sideWeight="0.49353796" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1481,7 +1233,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1490,277 +1242,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Singer/dubbox-Spittr-Singer-api/src/main/java/cn/tanjianff/Spittr/singer/domain/Singer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Singer/dubbox-Spittr-Singer-api/src/main/java/cn/tanjianff/Spittr/singer/SingerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-MusicGenres/dubbox-Spittr-MusicGenres-api/src/main/java/cn/tanjianff/Spittr/musicGenres/domain/MusicGenre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-MusicGenres/dubbox-Spittr-MusicGenres-api/src/main/java/cn/tanjianff/Spittr/musicGenres/MusicGenresService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album-api/src/main/java/cn/tanjianff/Spittr/album/domain/Album.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic-api/src/main/java/cn/tanjianff/Spittr/singleMusic/domain/SingleMusic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/js/layui.all.js" />
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/css/layui.css" />
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/java/cn/tanjianff/config/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="24" column="35" lean-forward="true" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/index.jsp" />
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/js/jquery.cookie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/js/json2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/images/2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/js/jquery.jplayer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/css/images/play.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/css/images/tao.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/css/images/pause.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/css/images/ic_pause_white_24dp.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2145">
-          <caret line="159" column="38" lean-forward="false" selection-start-line="159" selection-start-column="38" selection-end-line="159" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/play_audio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-          <folding>
-            <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMEvents.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="158" column="0" lean-forward="false" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/js/play_music.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-131">
-          <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
-          <folding>
-            <marker date="1497843165000" expanded="true" signature="7547:7563" ph="..." />
-            <marker date="1497843165000" expanded="true" signature="7883:7899" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1010" column="0" lean-forward="false" selection-start-line="1010" selection-start-column="0" selection-end-line="1010" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/js/jplayer.playlist.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="125" lean-forward="false" selection-start-line="0" selection-start-column="125" selection-end-line="0" selection-end-column="125" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/css/images/T1bMh.FxNXXXb_r3IF-72-730.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/css/images/pro.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/css/play_audio.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="583" column="1" lean-forward="false" selection-start-line="583" selection-start-column="1" selection-end-line="583" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/js/jquery.pjax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="721" column="53" lean-forward="false" selection-start-line="721" selection-start-column="53" selection-end-line="721" selection-end-column="53" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1497877790000" expanded="true" signature="25376:27316" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24542">
-          <caret line="815" column="14" lean-forward="true" selection-start-line="815" selection-start-column="14" selection-end-line="815" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/8f1e40f8/36573fdc-7dda-46fe-bb32-f82c8e6fafc9/Spittr.S_singer">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/8f1e40f8/36573fdc-7dda-46fe-bb32-f82c8e6fafc9/Spittr.S_song">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/8f1e40f8/36573fdc-7dda-46fe-bb32-f82c8e6fafc9/Spittr.S_albums">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album-core/src/main/java/cn/tanjianff/Spittr/album/repository/JdbcTemplate/JdbcAlbumsRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="71" column="74" lean-forward="false" selection-start-line="71" selection-start-column="74" selection-end-line="71" selection-end-column="74" />
-          <folding>
-            <element signature="e#3424#3425#0" expanded="true" />
-            <element signature="e#3507#3508#0" expanded="true" />
-            <marker date="1497887588000" expanded="true" signature="534:663" ph="INSERT INTO S_albums... " />
-            <marker date="1497887588000" expanded="true" signature="843:945" ph="SELECT s_aid... S_albums" />
-            <marker date="1497887588000" expanded="true" signature="1002:1109" ph="SELECT s_aid... S_albums" />
-            <marker date="1497887588000" expanded="true" signature="1163:1285" ph="SELECT s_aid... S_albums" />
-            <marker date="1497887588000" expanded="true" signature="1333:1421" ph="SELECT s_aid... S_albums" />
-            <marker date="1497887588000" expanded="true" signature="1472:1584" ph="SELECT s_aid... S_albums" />
-            <marker date="1497887588000" expanded="true" signature="1641:1753" ph="SELECT s_aid... S_albums" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album-api/src/main/java/cn/tanjianff/Spittr/album/repository/AlbumRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
           <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1768,48 +1253,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="421">
           <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album-core/src/main/java/cn/tanjianff/Spittr/album/AlbumServiceProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="49" column="26" lean-forward="false" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-          <folding>
-            <element signature="e#1087#1088#0" expanded="true" />
-            <element signature="e#1142#1143#0" expanded="true" />
-            <element signature="e#1204#1205#0" expanded="true" />
-            <element signature="e#1261#1262#0" expanded="true" />
-            <element signature="e#1302#1303#0" expanded="true" />
-            <element signature="e#1348#1349#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/36573fdc-7dda-46fe-bb32-f82c8e6fafc9/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="80" lean-forward="true" selection-start-line="0" selection-start-column="80" selection-end-line="0" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic-core/src/main/java/cn/tanjianff/Spittr/singleMusic/repository/JdbcTemplate/JdbcSingleMusicRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="75" column="44" lean-forward="false" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="51" />
-          <folding>
-            <marker date="1497888212000" expanded="true" signature="648:668" ph="SELECT * FRO... S_song" />
-            <marker date="1497888212000" expanded="true" signature="718:755" ph="SELECT * FRO... S_song" />
-            <marker date="1497888212000" expanded="true" signature="812:851" ph="SELECT * FRO... S_song" />
-            <marker date="1497888212000" expanded="true" signature="908:1049" ph="SELECT s_son... S_song" />
-            <marker date="1497888212000" expanded="true" signature="1098:1296" ph="INSERT INTO S_song... " />
-            <marker date="1497888212000" expanded="true" signature="1352:1541" ph="SELECT s_son... S_song" />
-            <marker date="1497888212000" expanded="true" signature="1601:1785" ph="SELECT s_son... S_song" />
-            <marker date="1497888212000" expanded="true" signature="1840:1946" ph="UPDATE S_son... " />
-            <marker date="1497888212000" expanded="true" signature="2000:2055" ph="SELECT * FRO... S_song" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1829,74 +1272,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic-api/src/main/java/cn/tanjianff/Spittr/singleMusic/repository/SingleMusicRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic-core/src/main/java/cn/tanjianff/Spittr/singleMusic/SingleMusicServiceProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#1237#1238#0" expanded="true" />
-            <element signature="e#1301#1302#0" expanded="true" />
-            <element signature="e#1362#1363#0" expanded="true" />
-            <element signature="e#1423#1424#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/java/cn/tanjianff/contorller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="390">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/resources/dubbo-Spittr-consumer-web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic-api/src/main/java/cn/tanjianff/Spittr/singleMusic/SingleMusicService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/java/cn/tanjianff/contorller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1054#1055#0" expanded="false" />
+            <element signature="e#1084#1085#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/java/cn/tanjianff/contorller/PopularController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.0.RELEASE/spring-jdbc-4.3.0.RELEASE.jar!/org/springframework/jdbc/core/RowMapper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="55" column="25" lean-forward="false" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1451#1452#0" expanded="true" />
-            <element signature="e#1504#1505#0" expanded="true" />
-            <element signature="e#1710#1711#0" expanded="true" />
-            <element signature="e#1769#1770#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="110" column="19" lean-forward="false" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8f1e40f8/36573fdc-7dda-46fe-bb32-f82c8e6fafc9/Spittr.S_users">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-User/dubbox-Spittr-User-api/src/main/java/cn/tanjianff/Spittr/user/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.0.RELEASE/spring-jdbc-4.3.0.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3420">
+          <caret line="71" column="13" lean-forward="false" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-User/dubbox-Spittr-User-core/src/main/java/cn/tanjianff/Spittr/user/repository/JdbcTemplate/JdbcUserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-User/dubbox-Spittr-User-api/src/main/java/cn/tanjianff/Spittr/user/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1908,28 +1346,306 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/js/app.js">
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-User/dubbox-Spittr-User-core/src/main/java/cn/tanjianff/Spittr/user/UserServiceProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="100" column="6" lean-forward="true" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
+        <state relative-caret-position="355">
+          <caret line="55" column="34" lean-forward="true" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/java/cn/tanjianff/contorller/PopularController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="55" column="25" lean-forward="false" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
           <folding>
-            <element signature="e#0#43#0" expanded="false" />
-            <element signature="e#2505#3574#0" expanded="false" />
-            <element signature="e#3724#4825#0" expanded="false" />
-            <element signature="e#4985#6375#0" expanded="false" />
-            <element signature="e#5934#6373#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1451#1452#0" expanded="false" />
+            <element signature="e#1504#1505#0" expanded="false" />
+            <element signature="e#1710#1711#0" expanded="false" />
+            <element signature="e#1769#1770#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album-core/src/main/java/cn/tanjianff/Spittr/album/AlbumServiceProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="58" lean-forward="false" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/resources/dubbo-Spittr-consumer-web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album-core/src/test/java/cn/tanjianff/Spittr/album/AlbumDemoProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/idea.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/java/cn/tanjianff/contorller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#905#906#0" expanded="false" />
+            <element signature="e#984#985#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/36573fdc-7dda-46fe-bb32-f82c8e6fafc9/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic-core/src/main/java/cn/tanjianff/Spittr/singleMusic/repository/JdbcTemplate/JdbcSingleMusicRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="91" column="52" lean-forward="true" selection-start-line="91" selection-start-column="45" selection-end-line="91" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic-api/src/main/java/cn/tanjianff/Spittr/singleMusic/repository/SingleMusicRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic-core/src/main/java/cn/tanjianff/Spittr/singleMusic/SingleMusicServiceProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="60" column="58" lean-forward="false" selection-start-line="60" selection-start-column="58" selection-end-line="60" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic-api/src/main/java/cn/tanjianff/Spittr/singleMusic/SingleMusicService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/java/cn/tanjianff/contorller/LatestReleasesController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        <state relative-caret-position="585">
+          <caret line="53" column="41" lean-forward="false" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="41" />
           <folding>
-            <element signature="e#1729#1730#0" expanded="true" />
-            <element signature="e#1778#1779#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1566#1567#0" expanded="false" />
+            <element signature="e#1621#1622#0" expanded="false" />
+            <element signature="e#1729#1730#0" expanded="false" />
+            <element signature="e#1778#1779#0" expanded="false" />
+            <element signature="e#1892#1893#0" expanded="false" />
+            <element signature="e#1952#1953#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/layer/mobile/need/layer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5175">
+          <caret line="345" column="22" lean-forward="true" selection-start-line="345" selection-start-column="22" selection-end-line="345" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/layer/skin/default/icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/layer/skin/default/icon-ext.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/layer/skin/default/layer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/layer/skin/default/loading-0.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="60" column="44" lean-forward="false" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+            <element signature="e#3982#5051#0" expanded="false" />
+            <element signature="e#5201#6302#0" expanded="false" />
+            <element signature="e#6462#7855#0" expanded="false" />
+            <element signature="e#7414#7853#0" expanded="false" />
+            <marker date="1497958178000" expanded="true" signature="8906:8939" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/layer/skin/spittrMv/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/css/images/ic_queue_music_grey600_36dp.png" />
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/css/images/T1bMh.FxNXXXb_r3IF-72-730.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/css/play_audio.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9510">
+          <caret line="634" column="14" lean-forward="false" selection-start-line="633" selection-start-column="17" selection-end-line="634" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8f1e40f8/36573fdc-7dda-46fe-bb32-f82c8e6fafc9/Spittr.S_song">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding>
+            <element signature="n#nav#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#5990#7481#0" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1497969138000" expanded="false" signature="25445:25461" ph="..." />
+            <marker date="1497969138000" expanded="true" signature="25500:27720" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/images/logo.bmp" />
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/images/logo.png" />
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Album/dubbox-Spittr-Album-core/src/main/resources/META-INF/spring/dubbo-Spittr-Album-provider.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Singer/dubbox-Spittr-Singer-api/src/main/java/cn/tanjianff/Spittr/singer/SingerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Singer/dubbox-Spittr-singer-core/src/main/java/cn/tanjianff/Spittr/singer/repository/JdbcTemplate/JdbcSingerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-321">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <marker date="1494390824000" expanded="true" signature="513:591" ph="SELECT s_sin... S_singer" />
+            <marker date="1494390824000" expanded="true" signature="647:748" ph="SELECT s_sin... S_singer" />
+            <marker date="1494390824000" expanded="true" signature="798:895" ph="SELECT s_sin... S_singer" />
+            <marker date="1494390824000" expanded="true" signature="1028:1150" ph="INSERT INTO S_singer... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Singer/dubbox-Spittr-singer-core/src/main/java/cn/tanjianff/Spittr/singer/SingerServiceProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Singer/dubbox-Spittr-singer-core/src/main/resources/META-INF/spring/dubbo-Spittr-Singer-provider.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-User/dubbox-Spittr-User-core/src/main/resources/META-INF/spring/dubbo-Spittr-User-provider.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic-core/src/main/resources/META-INF/spring/dubbo-Spittr-SingleMusic-provider.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-SingleMusic/dubbox-Spittr-SingleMusic-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-304">
+          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-User/dubbox-Spittr-User-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-719">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbox-Spittr/dubbox-Spittr-Web/src/main/webapp/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="373" column="15" lean-forward="false" selection-start-line="373" selection-start-column="15" selection-end-line="373" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -23,4 +23,6 @@ public interface UserService extends Serializable{
     List<User> getByNickName(String nickname);
 
     boolean update(User user);
+
+    User loginVali(String name,String pwd);
 }

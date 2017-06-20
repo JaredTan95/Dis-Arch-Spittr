@@ -3,6 +3,7 @@ package cn.tanjianff.contorller;
 import cn.tanjianff.Spittr.user.UserService;
 import cn.tanjianff.Spittr.user.domain.User;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -32,8 +33,18 @@ public class UserController {
 
     @RequestMapping(value = "/login")
     @ResponseBody
-    public User login(){
-        //TODO:
-        return null;
+    public User login(String name, String pwd) {
+        User u,user=null;
+        try {
+            u= userService.loginVali(name, pwd);
+            user.setAccount(u.getAccount());
+            user.setId(u.getId());
+            user.setNickname(u.getNickname());
+        } catch (Exception e) {
+            if (e instanceof DataAccessException) {
+                System.out.println(e);
+            }
+        }
+        return user;
     }
 }

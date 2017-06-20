@@ -33,6 +33,7 @@ public class JdbcSingleMusicRepository implements SingleMusicRepository {
             " s_visitedTotal=s_visitedTotal+1 WHERE s_songid=?;";
 
     private static final String ORDER_BY_UPDATE="SELECT * FROM S_song ORDER BY update_time DESC LIMIT 12";
+    private static final String ORDER_MV_BY_UPDATE_TIME="SELECT * FROM S_song WHERE s_smvurl  is not null AND s_smvurl<>'' ORDER BY update_time DESC LIMIT ?";
 
     private JdbcTemplate jdbcTemplate;
 
@@ -85,6 +86,11 @@ public class JdbcSingleMusicRepository implements SingleMusicRepository {
     @Override
     public List<SingleMusic> OrderByUpDate() {
         return jdbcTemplate.query(ORDER_BY_UPDATE,new SingleMusicRowMapper());
+    }
+
+    @Override
+    public List<SingleMusic> OrderMvByUpDate(int lmt) {
+        return jdbcTemplate.query(ORDER_MV_BY_UPDATE_TIME,new SingleMusicRowMapper(),lmt);
     }
 
     @Override

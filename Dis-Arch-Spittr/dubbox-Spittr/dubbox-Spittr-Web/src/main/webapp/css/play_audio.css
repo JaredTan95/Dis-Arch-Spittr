@@ -570,6 +570,52 @@ a {
     height: 18px;
 }
 
+.trackCon .open-playlists{
+    display: none;
+    position: absolute;
+    top: -300px;
+    right: 95px;
+    border-radius: 2px;
+    width: 555px;
+    height: 280px;
+    background-color: rgba(13, 15, 15, 0.95);
+    overflow-y:auto;
+}
+.trackCon .open-playlists span{
+    margin-left: 20px;
+    line-height: 40px;
+}
+.trackCon .open-playlists ul{
+    width: 100%;
+    list-style-type:none;
+    display:inline-block;
+}
+.trackCon .open-playlists ul li{
+    padding-left: 20px;
+    width: 100%;
+    line-height: 28px;
+    height: 28px;
+    color: #ccc;
+    /*border-bottom: 1px solid #ffffff;*/
+}
+.trackCon .open-playlists li:hover{
+    background-color: rgba(0, 0, 0, 0.84);
+    color: #ffffff;
+}
+.trackCon .open-playlists ul li .jp-playlist-item:hover{
+    color: #ffffff;
+}
+.trackCon .open-playlists ul li .jp-playlist-item-remove{
+    position: absolute;
+    top: inherit;
+    right:40px;
+}
+
+.trackCon .open-playlists ul .jp-playlist-current{
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.84);
+}
+
 .tc1 {
     width: 18px;
     height: 18px;
@@ -582,6 +628,22 @@ a {
 .songName, .songPlay {
     float: left;
 }
+.tc0 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -2px;
+    right: 98px;
+    background: url("../css/images/ic_queue_music_grey600_24dp.png");
+}
+.tc0-active{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -2px;
+    right: 98px;
+    background: url("../css/images/ic_queue_music_white_24dp.png");
+}
 .tc1 {
     position: absolute;
     width: 18px;
@@ -590,7 +652,6 @@ a {
     right: 66px;
     background: url("../css/images/T1bMh.FxNXXXb_r3IF-72-730.png") 0 -241px;
 }
-
 .tc2 {
     position: absolute;
     width: 18px;

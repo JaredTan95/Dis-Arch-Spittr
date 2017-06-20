@@ -2,6 +2,7 @@ package cn.tanjianff.Spittr.user.repository.JdbcTemplate;
 
 import cn.tanjianff.Spittr.user.domain.User;
 import cn.tanjianff.Spittr.user.repository.UserRepository;
+import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
@@ -22,6 +23,7 @@ public class JdbcUserRepository implements UserRepository {
     private static final String SELECT_ALL = "SELECT s_userid,s_uaccount,s_upwdsalt,s_upwd,s_unickname,s_uemail,s_unone FROM S_users;";
     private static final String INSERT_INTO_USER = "INSERT INTO S_users (s_userid,s_uaccount,s_upwdsalt,s_upwd,s_unickname,s_uemail,s_unone) VALUES(?,?,?,?,?,?,?);";
     private static final String SELECT_BY_NICKNAME_REGEXP="SELECT s_userid,s_uaccount,s_upwdsalt,s_upwd,s_unickname,s_uemail,s_unone FROM S_users WHERE s_unickname REGEXP ?";
+    private static final String LOGIN_VALI="SELECT * FROM S_users WHERE s_uaccount=? AND s_upwd=?";
 
     private JdbcTemplate jdbcTemplate;
 
@@ -65,6 +67,11 @@ public class JdbcUserRepository implements UserRepository {
     @Override
     public List<User> findAll() {
         return jdbcTemplate.query(SELECT_ALL,new UserRowMapper());
+    }
+
+    @Override
+    public User isExists(String name, String pwd) throws DataAccessException {
+        return jdbcTemplate.queryForObject(LOGIN_VALI,new UserRowMapper(),name,pwd);
     }
 
     private static final class UserRowMapper implements RowMapper<User> {

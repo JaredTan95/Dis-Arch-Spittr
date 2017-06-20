@@ -22,4 +22,6 @@ public interface UserRepository {
     boolean update(User user);
 
     List<User> findAll();
+
+    User isExists(String name,String pwd);
 }

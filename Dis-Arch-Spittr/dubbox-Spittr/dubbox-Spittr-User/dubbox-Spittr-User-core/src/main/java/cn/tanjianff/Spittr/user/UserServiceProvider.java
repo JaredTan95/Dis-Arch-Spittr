@@ -50,4 +50,9 @@ public class UserServiceProvider implements UserService {
     public boolean update(User user) {
         return userRepository.update(user);
     }
+
+    @Override
+    public User loginVali(String name, String pwd) {
+        return userRepository.isExists(name,pwd);
+    }
 }

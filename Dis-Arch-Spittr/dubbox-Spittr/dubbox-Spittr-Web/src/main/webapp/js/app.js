@@ -7,6 +7,12 @@ $(document).ready(function () {
     console.log("注：严禁将本网站所有内容用于商业用途，否则后果自负！");
     console.log("=============Spittr==By==谭建===============");
     console.log("=============目前状态：DeBug...===============");
+
+
+    layer.config({
+        extend: 'spittrMv/style.css', //加载您的扩展样式
+        skin: 'layer-ext-spittrMv' //加上边框
+    });
     $(function () {
         $.cookie("plamusicPage", 0);
         $.cookie("playLists", "[]");
@@ -14,39 +20,63 @@ $(document).ready(function () {
         $.get("/LatestRelease/loadData/singleMusic", function (data) {
             $('#ul_result_lr').html("");
             for (var i = 0; i < data.length; i++) {
-                var html = "<li> <a href='#!' class='img playMusic' data-songurl='" + data[i].url + "' data-songid='" + data[i].songId + "' data-title='"+data[i].title+"'><img src='" + data[i].cover + "?imageView2/1/w/300/h/300/format/png/q/100|imageslim' alt=''>" +
+                var html = "<li> <a href='#!' class='img playMusic' data-songurl='" + data[i].url + "' data-songid='" + data[i].songId + "' data-title='" + data[i].title + "'><img src='" + data[i].cover + "?imageView2/1/w/300/h/300/format/png/q/100|imageslim' alt=''>" +
                     "<span class='mask' data-songurl='" + data[i].url + "' data-songid='" + data[i].songId + "'></span><i class='icon-play'></i></a><div class='info'>" +
                     "<div class='title'> <a href='#!' data-songid='" + data[i].songId + "'>" + data[i].title + "</a><i class='icon-sprite'></i> </div> " +
-                    "<a href='#!' class='author playMusic'>" + data[i].visitedTotal + "</a></div> </li>";
+                    "<a href='#!' class='author playMusic'>" + data[i].visitedTotal + "</a></div></li>";
                 $('#ul_result_lr').append(html);
+            }
+        });
+
+        $.get("/LatestRelease/lodaData/mv?lmt=8", function (data) {
+            $('#ul_result_lr_mv').html("");
+            for (var i = 0; data.length; i++) {
+                var html = "<li class='item'><a href='#!' data-title='" + data[i].title + "' data-mvurl='" + data[i].mvurl + "' data-songid='" + data[i].songId + "'class='img playMv'>" +
+                    "<img src='" + data[i].cover + "?imageView2/1/w/300/h/170/interlace/1/q/90|imageslim' alt='" + data[i].title + "'>" +
+                    "<i class='icon-play'></i></a><div class='info'>" +
+                    "<a href='#!' class='title'>" + data[i].title + "</a>" +
+                    "<a href='#!' class='author'>TanJian</a>" +
+                    "<span class='play-total'><i class='icon-sprite'></i>" + data[i].visitedTotal + "</span>" +
+                    "</div></li>";
+                $('#ul_result_lr_mv').append(html);
             }
         });
 
         console.log("loading Data end !");
         $('#newSong').on('click', '.playMusic', function () {
-            $.SpittrParseData.playParse($(this));
+            $.SpittrParseData.playMusicParse($(this));
         });
-        $('#newSong').on('click', '.title a', function () {
-            console.log("songid:"+$(this).attr("data-songid"));
-            $.SpittrParseData.jumpParse('song',$(this));
+        $('#mv').on('click', '.playMv', function () {
+            $.SpittrParseData.playMvParse($(this));
         });
-        $('#jquery_jplayer_1').on('click','.songName',function () {
 
-            console.log("点击了播放控件上面正在播放歌曲的Id:"+$(this).attr('data-songId'));
-            var state={
-                title:'',
-                url:''
+        $('#newSong').on('click', '.title a', function () {
+            console.log("songid:" + $(this).attr("data-songid"));
+            $.SpittrParseData.jumpParse('song', $(this));
+        });
+
+        $("#toggle-open-playlists").on('click', function () {
+            /*$(this).attr('class')?$(this).attr('class','tc0-active'):$(this).attr('class','tc0');*/
+            $('.open-playlists').fadeToggle("fast");
+            $(this).toggleClass('tc0-active');
+        });
+        $('#jquery_jplayer_1').on('click', '.songName', function () {
+
+            console.log("点击了播放控件上面正在播放歌曲的Id:" + $(this).attr('data-songId'));
+            var state = {
+                title: '',
+                url: ''
             };
-            window.history.pushState(state,document.title,"#!songdtail/"+$(this).attr('data-songId'));
+            window.history.pushState(state, document.title, "#!songdtail/" + $(this).attr('data-songId'));
         });
     });
 });
-window.addEventListener('popstate',function (e) {
-   if(history.state){
-       var state=e.state;
-       alert(state.title+" "+state.url);
-   }
-},false);
+window.addEventListener('popstate', function (e) {
+    if (history.state) {
+        var state = e.state;
+        alert(state.title + " " + state.url);
+    }
+}, false);
 
 var playLists = [{
     id: 123456,
@@ -148,12 +178,12 @@ jQuery.SpittrJplayer = {
         return myPlaylist;
     },
     itemPlay: function (data) {
-        console.log("准备播放:"+data.title);
+        console.log("准备播放:" + data.title);
         $.SpittrJplayer.getPlaylist().add(data);
         $.SpittrJplayer.getPlaylist().play(-1);
         $(document).attr('title', "▶ 正在播放:" + $.SpittrJplayer.getCurPlayTitle());
         //设置当前播放歌曲名的 data-songId 属性；
-        $('#jquery_jplayer_1').find('.songName').attr('data-songId',$.SpittrJplayer.getCurPlayId());
+        $('#jquery_jplayer_1').find('.songName').attr('data-songId', $.SpittrJplayer.getCurPlayId());
     },
     getCurPlayId: function () {
         var current = myPlaylist.current;
@@ -188,18 +218,44 @@ jQuery.SpittrJplayer = {
 };
 
 jQuery.SpittrParseData = {
-    playParse:function (e) {
-        var songId=e.attr("data-songid");
-        var url=e.attr("data-songurl");
-        var tit=e.attr("data-title");
-        $.SpittrJplayer.itemPlay({id:songId,title:tit,artist:null,mp3:url,poster:""});
+    playMusicParse: function (e) {
+        var songId = e.attr("data-songid");
+        var url = e.attr("data-songurl");
+        var tit = e.attr("data-title");
+        $.SpittrJplayer.itemPlay({id: songId, title: tit, artist: null, mp3: url, poster: ""});
     },
-    jumpParse:function (type,e) {
-        switch (type){
+    playMvParse: function (e) {
+        var mvurl = e.attr("data-mvurl");
+        var tit = e.attr("data-title");
+        $.SpittrLayer.mvPlay(tit, mvurl);
+
+    },
+    jumpParse: function (type, e) {
+        switch (type) {
             //TODO:待完善不同业务
-            case 'song':{e.attr("data-songid")}break;
-            case 'album':{e.attr('')}break;
+            case 'song': {
+                e.attr("data-songid")
+            }
+                break;
+            case 'album': {
+                e.attr('')
+            }
+                break;
         }
 
+    }
+};
+jQuery.SpittrLayer = {
+    mvPlay: function (tit, mvurl) {
+        //页面层
+        layer.open({
+            title: tit,
+            type: 1,
+            shade: 0.8,
+            closeBtn: 2,
+            scrollbar: false,
+            area: ['854px', '522px'],
+            content: '<video style="position: absolute;top: 0;left:0;" autoplay="autoplay" width="854px" height="480px" controls><source src="' + mvurl + '" type="video/mp4"><source src="' + mvurl + '" type="video/ogg">您的浏览器不支持Video标签。</video>'
+        });
     }
 };

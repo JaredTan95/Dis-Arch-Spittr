@@ -7,7 +7,7 @@
 
     <dubbo:application name="Spittr-Service-provider" owner="programmer" organization="cn.tanjianff"/>
 
-    <dubbo:registry address="zookeeper://123.207.83.185:2181?backup=139.199.89.106:2181,115.159.216.56:2181"/>
+    <dubbo:registry address="zookeeper://123.207.83.185:2181?backup=139.199.89.106:2181,115.159.75.248:2181"/>
 
     <!--uncomment this if you want to test dubbo's monitor-->
     <!--<dubbo:monitor protocol="registry"/>-->

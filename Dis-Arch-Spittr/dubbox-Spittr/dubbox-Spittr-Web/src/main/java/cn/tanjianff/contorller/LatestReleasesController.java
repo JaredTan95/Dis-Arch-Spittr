@@ -50,4 +50,10 @@ public class LatestReleasesController {
     public List<Album> loadData4Albums(){
         return albumService.getByUpdate();
     }
+
+    @RequestMapping(value = "/lodaData/mv")
+    @ResponseBody
+    public List<SingleMusic> loadData4Mv(int lmt){
+        return singleMusicService.getMvByUpDate(lmt);
+    }
 }

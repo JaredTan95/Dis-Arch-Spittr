@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Demo</title>
+    <title>Spittr-罐头音乐网站.</title>
     <!-- <link rel="icon" href="favicons/1.png">-->
 
     <link rel="stylesheet" href="css/reset.css">
@@ -18,14 +18,14 @@
 <header class="header">
     <div class="header-container">
         <div class="header-top">
-            <!--<a href="#" class="logo"></a>-->
-
+            <a href="#" class="logo"></a>
+            <!--   <a>Spittr</a>-->
             <nav class="header-nav">
                 <ul>
-                    <li><a href="#" class="header-nav__cur">音乐馆</a></li>
-                    <li><a href="./play_audio.html">我的音乐</a></li>
-                    <li><a href="#">下载客户端</a></li>
-                    <li><a href="#">VIP</a></li>
+                    <li><a href="#!" class="header-nav__cur">发现音乐</a></li>
+                    <li><a href="#!">我的音乐</a></li>
+                    <li><a href="#!">朋友</a></li>
+                    <li><a href="#!">下载客户端</a></li>
                 </ul>
             </nav>
             <div class="header-search">
@@ -140,7 +140,7 @@
 </div>
 
 <!-- 精彩推荐 -->
-<div class="main" id="recommend">
+<!--<div class="main" id="recommend">
     <div class="main-inner">
         <div class="main-title">
             <h2 class="title"><i></i></h2>
@@ -170,7 +170,7 @@
         <a href="#" class="slider-prev"><i class="icon-sprite"></i></a>
         <a href="#" class="slider-next"><i class="icon-sprite"></i></a>
     </div>
-</div>
+</div>-->
 
 <!-- 排行榜 -->
 <div class="main" id="rank">
@@ -310,7 +310,7 @@
             <ul class="slider-wrapper">
                 <li>
                     <a href="#" class="img">
-                        <img src="http://oolx3565r.bkt.clouddn.com/X-Ray-Dog.jpg?imageView2/1/w/300/h/300/format/png/q/100|imageslim"
+                        <img src="http://oolx3565r.bkt.clouddn.com/X-RayDog.jpg?imageView2/1/w/300/h/300/format/png/q/100|imageslim"
                              alt="#">
                         <span class="mask"></span>
                         <i class="icon-play"></i>
@@ -513,71 +513,71 @@
             <a href="javascript:;" class="item">韩国</a>
             <a href="javascript:;" class="item">日本</a>
         </div>
-        <ul class="mv-list tab-cont">
-            <li class="item">
-                <a href="#" class="img"><img src="images/cont/mv_img1.jpg" alt="#"><i class="icon-play"></i></a>
-                <div class="info">
-                    <a href="#" class="title">Let Me Love You</a>
-                    <a href="#" class="author">刘惜君</a>
-                    <span class="play-total"><i class="icon-sprite"></i>18.8万</span>
-                </div>
-            </li>
-            <li class="item">
-                <a href="#" class="img"><img src="images/cont/mv_img2.jpg" alt="#"><i class="icon-play"></i></a>
-                <div class="info">
-                    <a href="#" class="title">Let Me Love You</a>
-                    <a href="#" class="author">刘惜君</a>
-                    <span class="play-total"><i class="icon-sprite"></i>18.8万</span>
-                </div>
-            </li>
-            <li class="item">
-                <a href="#" class="img"><img src="images/cont/mv_img3.jpg" alt="#"><i class="icon-play"></i></a>
-                <div class="info">
-                    <a href="#" class="title">Let Me Love You</a>
-                    <a href="#" class="author">刘惜君</a>
-                    <span class="play-total"><i class="icon-sprite"></i>18.8万</span>
-                </div>
-            </li>
-            <li class="item">
-                <a href="#" class="img"><img src="images/cont/mv_img4.jpg" alt="#"><i class="icon-play"></i></a>
-                <div class="info">
-                    <a href="#" class="title">Let Me Love You</a>
-                    <a href="#" class="author">刘惜君</a>
-                    <span class="play-total"><i class="icon-sprite"></i>18.8万</span>
-                </div>
-            </li>
-            <li class="item">
-                <a href="#" class="img"><img src="images/cont/mv_img5.jpg" alt="#"><i class="icon-play"></i></a>
-                <div class="info">
-                    <a href="#" class="title">Let Me Love You</a>
-                    <a href="#" class="author">刘惜君</a>
-                    <span class="play-total"><i class="icon-sprite"></i>18.8万</span>
-                </div>
-            </li>
-            <li class="item">
-                <a href="#" class="img"><img src="images/cont/mv_img6.jpg" alt="#"><i class="icon-play"></i></a>
-                <div class="info">
-                    <a href="#" class="title">Let Me Love You</a>
-                    <a href="#" class="author">刘惜君</a>
-                    <span class="play-total"><i class="icon-sprite"></i>18.8万</span>
-                </div>
-            </li>
-            <li class="item">
-                <a href="#" class="img"><img src="images/cont/mv_img7.jpg" alt="#"><i class="icon-play"></i></a>
-                <div class="info">
-                    <a href="#" class="title">Let Me Love You</a>
-                    <a href="#" class="author">刘惜君</a>
-                    <span class="play-total"><i class="icon-sprite"></i>18.8万</span>
-                </div>
-            </li>
-            <li class="item">
-                <a href="#" class="img"><img src="images/cont/mv_img8.jpg" alt="#"><i class="icon-play"></i></a>
-                <div class="info">
-                    <a href="#" class="title">Let Me Love You</a>
-                    <a href="#" class="author">刘惜君</a>
-                    <span class="play-total"><i class="icon-sprite"></i>18.8万</span>
-                </div>
-            </li>
+        <ul class="mv-list tab-cont" id="ul_result_lr_mv">
+            <!-- <li class="item">
+                 <a href="#" class="img"><img src="images/cont/mv_img1.jpg" alt="#"><i class="icon-play"></i></a>
+                 <div class="info">
+                     <a href="#" class="title">Let Me Love You</a>
+                     <a href="#" class="author">刘惜君</a>
+                     <span class="play-total"><i class="icon-sprite"></i>18.8万</span>
+                 </div>
+             </li>
+             <li class="item">
+                 <a href="#" class="img"><img src="images/cont/mv_img2.jpg" alt="#"><i class="icon-play"></i></a>
+                 <div class="info">
+                     <a href="#" class="title">Let Me Love You</a>
+                     <a href="#" class="author">刘惜君</a>
+                     <span class="play-total"><i class="icon-sprite"></i>18.8万</span>
+                 </div>
+             </li>
+             <li class="item">
+                 <a href="#" class="img"><img src="images/cont/mv_img3.jpg" alt="#"><i class="icon-play"></i></a>
+                 <div class="info">
+                     <a href="#" class="title">Let Me Love You</a>
+                     <a href="#" class="author">刘惜君</a>
+                     <span class="play-total"><i class="icon-sprite"></i>18.8万</span>
+                 </div>
+             </li>
+             <li class="item">
+                 <a href="#" class="img"><img src="images/cont/mv_img4.jpg" alt="#"><i class="icon-play"></i></a>
+                 <div class="info">
+                     <a href="#" class="title">Let Me Love You</a>
+                     <a href="#" class="author">刘惜君</a>
+                     <span class="play-total"><i class="icon-sprite"></i>18.8万</span>
+                 </div>
+             </li>
+             <li class="item">
+                 <a href="#" class="img"><img src="images/cont/mv_img5.jpg" alt="#"><i class="icon-play"></i></a>
+                 <div class="info">
+                     <a href="#" class="title">Let Me Love You</a>
+                     <a href="#" class="author">刘惜君</a>
+                     <span class="play-total"><i class="icon-sprite"></i>18.8万</span>
+                 </div>
+             </li>
+             <li class="item">
+                 <a href="#" class="img"><img src="images/cont/mv_img6.jpg" alt="#"><i class="icon-play"></i></a>
+                 <div class="info">
+                     <a href="#" class="title">Let Me Love You</a>
+                     <a href="#" class="author">刘惜君</a>
+                     <span class="play-total"><i class="icon-sprite"></i>18.8万</span>
+                 </div>
+             </li>
+             <li class="item">
+                 <a href="#" class="img"><img src="images/cont/mv_img7.jpg" alt="#"><i class="icon-play"></i></a>
+                 <div class="info">
+                     <a href="#" class="title">Let Me Love You</a>
+                     <a href="#" class="author">刘惜君</a>
+                     <span class="play-total"><i class="icon-sprite"></i>18.8万</span>
+                 </div>
+             </li>
+             <li class="item">
+                 <a href="#" class="img"><img src="images/cont/mv_img8.jpg" alt="#"><i class="icon-play"></i></a>
+                 <div class="info">
+                     <a href="#" class="title">Let Me Love You</a>
+                     <a href="#" class="author">刘惜君</a>
+                     <span class="play-total"><i class="icon-sprite"></i>18.8万</span>
+                 </div>
+             </li>-->
         </ul>
     </div>
 </div>
@@ -599,11 +599,17 @@
 
                 <a href="#" class="songPlayer"></a>
                 <div class="trackCon ">
-                    <div class="jp-playlist">
-                        <ul>
-                            <li></li> <!-- Empty <li> so your HTML conforms with the W3C spec -->
-                        </ul>
+                    <div class="open-playlists">
+                        <div>
+                            <span>歌曲名</span>
+                        </div>
+                        <div class="jp-playlist">
+                            <ul>
+                                <li></li> <!-- Empty <li> so your HTML conforms with the W3C spec -->
+                            </ul>
+                        </div>
                     </div>
+                    <a href="#!" class="tc0" id="toggle-open-playlists"></a>
                     <a href="#" class="tc1"></a>
                     <a href="#" class="tc2"></a>
                     <a href="#" class="tc3"></a>
@@ -625,7 +631,7 @@
             <div class="volm">
                 <div class="volSpeaker jp-mute"></div>
                 <div class="volControl jp-volume-bar">
-                   <!-- <a href="#" class="dian2"></a>-->
+                    <!-- <a href="#" class="dian2"></a>-->
                 </div>
                 <div class="volSpeakerMax jp-volume-max"></div>
             </div>
@@ -637,7 +643,7 @@
 
 
 <!-- footer -->
-<footer class="footer">
+<!--<footer class="footer">
     <div class="footer-inner">
         <div class="footer-info">
             <div class="footer-info__download">
@@ -695,7 +701,7 @@
             <p>xx公司 版权所有 xx网络文化经营许可证</p>
         </div>
     </div>
-</footer>
+</footer>-->
 
 <!-- 分享到 -->
 <ul class="slider-share">
@@ -721,6 +727,7 @@
 <script type="text/javascript" src="js/jquery-ui.js"></script>
 <script type="text/javascript" src="js/jquery.pjax.js"></script>
 <script type="text/javascript" src="js/canvas.js"></script>
+<script type="text/javascript" src="layer/layer.js"></script>
 <!--<script type="text/javascript" src="js/mousewheel.js"></script>-->
 <!--<script type="text/javascript" src="js/scroll.js"></script>-->
 <!--<script type="text/javascript" src="js/play_music.js"></script>-->
