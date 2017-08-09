@@ -7,7 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -32,7 +31,7 @@ public class HomeController {
 
     public HomeController() {
         // 获取远程服务代理
-        this.userService = (UserService) context.getBean("userService");
+       // this.userService = (UserService) context.getBean("userService");
     }
 
     @RequestMapping(value = "")
@@ -44,13 +43,13 @@ public class HomeController {
     @ResponseBody
     public List<User> test() {
 
-        List<User> lists = new ArrayList<>();
+       /* List<User> lists = new ArrayList<>();
         if (userService != null) {
             lists.addAll(userService.getUsers());
         } else {
             lists.add(new User());
-        }
-        return lists;
+        }*/
+        return null;
     }
 
 

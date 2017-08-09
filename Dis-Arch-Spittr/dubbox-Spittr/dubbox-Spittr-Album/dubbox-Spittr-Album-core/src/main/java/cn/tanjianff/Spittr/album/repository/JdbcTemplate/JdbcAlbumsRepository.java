@@ -43,6 +43,11 @@ public class JdbcAlbumsRepository implements AlbumRepository {
         return jdbcTemplate.getMaxRows();
     }
 
+    @Override
+    public int updateOne(Album album) {
+        return 0;
+    }
+
     public Album findById(String id) {
         return jdbcTemplate.queryForObject(SELECT_BY_ID,new AlbumRowMapper(),id);
     }

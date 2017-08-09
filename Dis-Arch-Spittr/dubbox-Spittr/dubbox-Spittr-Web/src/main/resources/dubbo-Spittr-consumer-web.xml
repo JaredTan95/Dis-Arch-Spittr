@@ -7,18 +7,19 @@
 
     <dubbo:application name="Spittr-Service-consumer" owner="programmer" organization="cn.tanjianff"/>
 
-    <dubbo:registry address="zookeeper://123.207.83.185:2181?backup=139.199.89.106:2181,115.159.216.56:2181"/>
+    <dubbo:registry address="zookeeper://123.207.83.185:2181?backup=139.199.89.106:2181,115.159.75.248:2181"/>
 
 
     <!--uncomment this if you want to test dubbo's monitor-->
     <!--<dubbo:monitor protocol="registry"/>-->
 
-    <dubbo:reference id="singleMusicService" interface="cn.tanjianff.Spittr.singleMusic.SingleMusicService"/>
+    <!--直连-->
+    <dubbo:reference id="singleMusicService" interface="cn.tanjianff.Spittr.singleMusic.SingleMusicService" url="dubbo://115.159.216.56:20883/cn.tanjianff.Spittr.singleMusic.SingleMusicService"/>
 
-    <dubbo:reference id="albumService" interface="cn.tanjianff.Spittr.album.AlbumService"/>
+    <dubbo:reference id="albumService" interface="cn.tanjianff.Spittr.album.AlbumService" url="dubbo://115.159.216.56:20880/cn.tanjianff.Spittr.album.AlbumService"/>
 
     
-    <dubbo:reference id="userService" interface="cn.tanjianff.Spittr.user.UserService"/>
+    <dubbo:reference id="userService" interface="cn.tanjianff.Spittr.user.UserService" url="dubbo://115.159.216.56:20884/cn.tanjianff.Spittr.user.UserService"/>
 
     <!-- directly connect to provider to simulate the access to non-dubbo rest services -->
     <!--<dubbo:reference id="anotherUserRestService" interface="com.alibaba.dubbo.demo.user.facade.AnotherUserRestService" url="rest://localhost:8888/services/"/>-->

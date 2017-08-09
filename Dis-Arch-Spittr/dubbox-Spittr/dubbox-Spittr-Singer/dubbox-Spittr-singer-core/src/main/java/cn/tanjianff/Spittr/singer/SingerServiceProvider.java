@@ -7,6 +7,7 @@ import java.util.List;
 
 /**
  * Created by tanjian on 2017/5/10.
+ * 歌手服务接口实现
  */
 public class SingerServiceProvider implements SingerService{
     private SingerRepository singerRepository;

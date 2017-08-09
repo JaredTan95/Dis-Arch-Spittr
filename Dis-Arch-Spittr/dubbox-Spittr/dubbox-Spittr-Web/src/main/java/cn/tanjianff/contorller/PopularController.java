@@ -32,8 +32,6 @@ public class PopularController {
 
     public PopularController() {
         // 获取远程服务代理
-        this.singleMusicService= (SingleMusicService) context.getBean("singleMusicService");
-        this.albumService= (AlbumService) context.getBean("albumService");
     }
 
 
@@ -46,6 +44,7 @@ public class PopularController {
     @RequestMapping(value = "/albums")
     @ResponseBody
     public List<Album> getAlbums(int lmt){
+        this.albumService= (AlbumService) context.getBean("albumService");
         return albumService.getByVisited(lmt);
     }
 
@@ -58,6 +57,7 @@ public class PopularController {
     @RequestMapping(value = "/singelMusic")
     @ResponseBody
     public List<SingleMusic> getSingleMusic(int lmt){
+        this.singleMusicService= (SingleMusicService) context.getBean("singleMusicService");
         return singleMusicService.getByVisited(lmt);
     }
 }

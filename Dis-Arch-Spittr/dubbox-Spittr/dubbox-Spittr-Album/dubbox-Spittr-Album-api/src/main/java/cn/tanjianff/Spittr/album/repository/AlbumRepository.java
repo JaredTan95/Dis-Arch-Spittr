@@ -13,6 +13,8 @@ public interface AlbumRepository {
 
     int count();
 
+    int updateOne(Album album);
+
     Album findById(String id);
 
     List<Album> findBySingerId(String id);
@@ -26,4 +28,5 @@ public interface AlbumRepository {
     List<Album> findByTitle(String title);
 
     List<Album> findByVisited(int lmt);
+
 }

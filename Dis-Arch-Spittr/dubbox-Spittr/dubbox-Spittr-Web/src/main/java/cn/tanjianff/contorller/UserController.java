@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping(value = "/user")
 public class UserController {
     private static ClassPathXmlApplicationContext context;
+
     private UserService userService;
 
     static {
@@ -28,12 +29,13 @@ public class UserController {
     }
 
     public UserController() {
-        this.userService = (UserService) context.getBean("userService");
     }
 
     @RequestMapping(value = "/login")
     @ResponseBody
     public User login(String name, String pwd) {
+        this.userService = (UserService) context.getBean("userService");
+
         User u,user=null;
         try {
             u= userService.loginVali(name, pwd);

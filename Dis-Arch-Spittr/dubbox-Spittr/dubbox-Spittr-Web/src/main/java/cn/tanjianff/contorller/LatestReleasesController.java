@@ -33,27 +33,48 @@ public class LatestReleasesController {
         context.start();
     }
 
+    /**
+     * Instantiates a new Latest releases controller.
+     */
     public LatestReleasesController() {
         // 获取远程服务代理
-        this.userService = (UserService) context.getBean("userService");
-        this.singleMusicService= (SingleMusicService) context.getBean("singleMusicService");
-        this.albumService= (AlbumService) context.getBean("albumService");
+      //  this.userService = (UserService) context.getBean("userService");
     }
+
+    /**
+     * Load data 4 single music list.
+     *
+     * @return the list
+     */
     @RequestMapping(value = "/loadData/singleMusic")
     @ResponseBody
     public List<SingleMusic> loadData4singleMusic(){
+        this.singleMusicService= (SingleMusicService) context.getBean("singleMusicService");
         return singleMusicService.getByUpDate();
     }
 
+    /**
+     * Load data 4 albums list.
+     *
+     * @return the list
+     */
     @RequestMapping(value = "/loadData/album")
     @ResponseBody
     public List<Album> loadData4Albums(){
+        this.albumService= (AlbumService) context.getBean("albumService");
         return albumService.getByUpdate();
     }
 
+    /**
+     * Load data 4 mv list.
+     *
+     * @param lmt the lmt
+     * @return the list
+     */
     @RequestMapping(value = "/lodaData/mv")
     @ResponseBody
     public List<SingleMusic> loadData4Mv(int lmt){
+        this.singleMusicService= (SingleMusicService) context.getBean("singleMusicService");
         return singleMusicService.getMvByUpDate(lmt);
     }
 }
