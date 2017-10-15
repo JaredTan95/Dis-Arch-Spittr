@@ -6,7 +6,7 @@
     <!--配置bean-->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
-        <property name="jdbcUrl" value="jdbc:mysql://123.207.83.185:3306/Spittr"/>
+        <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/Spittr"/>
         <property name="user" value="dev"/>
         <property name="password" value="123456"/>
         <property name="initialPoolSize" value="5"/>
