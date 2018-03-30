@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="dubbox-Spittr-Web:war exploded">
+    <output-path>$PROJECT_DIR$/dubbox-Spittr-Web/target/dubbox-Spittr-Web</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="dubbox-Spittr-Web" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="dubbox-Spittr-Album-api-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="dubbox-Spittr-Album-api" />
+          </element>
+          <element id="archive" name="dubbox-Spittr-User-api-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="dubbox-Spittr-User-api" />
+          </element>
+          <element id="archive" name="dubbox-Spittr-SingleMusic-api-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="dubbox-Spittr-SingleMusic-api" />
+          </element>
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/dubbox-Spittr-Web/target/dubbox-Spittr-Web/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="dubbox-Spittr-Web/web/Web" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <artifactId>dubbox-Spittr-Singer</artifactId>
+    <groupId>spittr.jaredtan95.github.com</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>dubbox-Spittr-singer-core</artifactId>
+  <build>
+    <finalName>${artifactId}-Service-Povider-${version}</finalName>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>2.4.2</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <transformers>
+                <transformer>
+                  <mainClass>com.alibaba.dubbo.container.Main</mainClass>
+                </transformer>
+                <transformer>
+                  <resource>META-INF/META-INF.handlers</resource>
+                </transformer>
+                <transformer>
+                  <resource>META-INF/META-INF.schemas</resource>
+                </transformer>
+              </transformers>
+            </configuration>
+          </execution>
+        </executions>
+        <configuration>
+          <createDependencyReducedPom>true</createDependencyReducedPom>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+

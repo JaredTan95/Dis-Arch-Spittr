@@ -1,0 +1,13 @@
+body .layer-ext-spittrMv{
+    border-radius: 5px;
+}
+body .layer-ext-spittrMv .layui-layer-title{
+    background: #333;
+    color: rgba(241, 138, 71, 0.85);
+    border-bottom: 1px solid #1C2331;
+}
+body .layui-ext-spittrMv .layui-layer-btn{}
+body .layui-ext-spittrMv .layui-layer-btn a{}
+body .layui-ext-spittrMv .layui-layer-content{
+    height: 486px;!important;
+}

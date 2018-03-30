@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="Spittr-Service-provider" owner="programmer" organization="cn.tanjianff"/>
+
+    <dubbo:registry address="zookeeper://123.207.83.185:2181?backup=139.199.89.106:2181,115.159.216.56:2181"/>
+
+    <dubbo:annotation package="cn.tanjianff.Spittr.musicGenres" />
+
+    <dubbo:protocol name="dubbo" serialization="dubbo" port="20882"/>
+
+    <dubbo:protocol name="http" port="8889"/>
+
+    <dubbo:service interface="cn.tanjianff.Spittr.musicGenres.MusicGenresService" ref="musicGenresProvider" protocol="dubbo"/>
+
+    <!--引入JavaConfig配置文件，重点引入JdbcTemplate Bean-->
+    <import resource="RootConfig.xml" />
+    <bean id="musicGenresProvider" class="cn.tanjianff.Spittr.musicGenres.MusicGenresProvider">
+        <constructor-arg ref="jdbcMusicGenresRepository"/>
+    </bean>
+</beans>
